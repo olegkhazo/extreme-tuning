@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Ukr Shipping\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "Новая почта"
+msgstr "Nova poshta"
+
+msgid "Укажите отделение доставки"
+msgstr "Enter delivery office"
+
+msgid "Выберите область"
+msgstr "Select state"
+
+msgid "Выберите город"
+msgstr "Select city"
+
+msgid "Выберите отделение"
+msgstr "Select warehouse"
+
+msgid "Нужна адресная доставка"
+msgstr "Need address delivery"
+
+msgid "Введите адрес"
+msgstr "Enter address"
+
+msgid "Ничего не найдено"
+msgstr "No results found"
+
+msgid "checkout_validation_message"
+msgstr "Enter <strong>Nova Poshta</strong> address"
+
+msgid "nav_item_premium"
+msgstr "Premium version"
+
+# top panel
+msgid "top_panel_docs"
+msgstr "Documentation"
+
+msgid "top_panel_premium"
+msgstr "Premium version"
+
+# options page
+msgid "options_page_title"
+msgstr "Settings - WC Ukr Shipping"
+
+msgid "options_page_heading"
+msgstr "Settings"
+
+msgid "options_btn_save"
+msgstr "Save"
+
+msgid "options_tab_common"
+msgstr "Common"
+
+msgid "options_tab_shipping"
+msgstr "Shipping"
+
+msgid "options_tab_translates"
+msgstr "Translates"
+
+msgid "options_label_api_key"
+msgstr "Api key"
+
+msgid "options_label_fixed_price"
+msgstr "Fixed shipping cost"
+
+msgid "options_label_warehouse_lang"
+msgstr "Display language of cities and branches"
+
+msgid "options_warehouse_lang_ru"
+msgstr "Russian"
+
+msgid "options_warehouse_lang_ua"
+msgstr "Ukrainian"
+
+msgid "options_label_field_position"
+msgstr "Block position on the checkout page"
+
+msgid "options_field_position_main"
+msgstr "Main section"
+
+msgid "options_field_position_additional"
+msgstr "Additional section"
+
+msgid "options_tooltip_field_position"
+msgstr ""
+"Selecting the \"Additional section\" option will place plugin fields in "
+"front of the \"Order note\" field"
+
+msgid "options_label_address_shipping"
+msgstr "Enable address shipping"
+
+msgid "options_label_new_ui"
+msgstr "Use new UI"
+
+msgid "options_label_show_poshtomats"
+msgstr "Show poshtomats"
+
+msgid "options_label_translates_type"
+msgstr "Load translates from"
+
+msgid "options_translates_type_options"
+msgstr "Plugin options"
+
+msgid "options_translates_type_mo_files"
+msgstr "mo translates"
+
+msgid "options_tooltip_translates_type"
+msgstr ""
+"If you are using language plugins like WPML - select the translation from mo "
+"files. This way you will get translations in 3 default languages (russian, "
+"ukrainian, english)."
+
+msgid "options_label_spinner_color"
+msgstr "Frontend spinner color"
+
+msgid "options_label_warehouse_update"
+msgstr "Nova Poshta branches info"
+
+msgid "options_btn_warehouse_update"
+msgstr "Update branches"
+
+msgid "save_options_success"
+msgstr "Settings saved successfully"
+
+# Checkout
+msgid "checkout_fields_title"
+msgstr "Delivery address"
+
+msgid "checkout_shipping_type_warehouse"
+msgstr "to department"
+
+msgid "checkout_shipping_type_doors"
+msgstr "to address"
+
+msgid "checkout_city_placeholder"
+msgstr "City"
+
+msgid "checkout_warehouse_placeholder"
+msgstr "Warehouse"
+
+msgid "checkout_custom_address_placeholder"
+msgstr "Enter address"
+
+msgid "checkout_text_search"
+msgstr "Enter a value to search"
+
+msgid "checkout_text_loading"
+msgstr "Loading..."
+
+msgid "checkout_text_more"
+msgstr "Load more"
+
+msgid "checkout_text_not_found"
+msgstr "Nothing found"
+
+msgid "checkout_text_more_chars"
+msgstr "Enter more chars to search"

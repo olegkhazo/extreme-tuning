@@ -1,0 +1,25 @@
+2021-07-01T08:10:21+00:00 CRITICAL Uncaught Error: Class 'WP_Widget_Meta' not found in C:\xampp\htdocs\gct\extremeTuning\wp-includes\class-wp-widget-factory.php:61
+Stack trace:
+#0 C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets.php(115): WP_Widget_Factory->register('WP_Widget_Meta')
+#1 C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets.php(1774): register_widget('WP_Widget_Meta')
+#2 C:\xampp\htdocs\gct\extremeTuning\wp-includes\class-wp-hook.php(292): wp_widgets_init('')
+#3 C:\xampp\htdocs\gct\extremeTuning\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\gct\extremeTuning\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\gct\extremeTuning\wp-settings.php(560): do_action('init')
+#6 C:\xampp\htdocs\gct\extremeTuning\wp-config.php(94): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\gct\extremeTuning\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\gct\extremeTuning\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\ht в C:\xampp\htdocs\gct\extremeTuning\wp-includes\class-wp-widget-factory.php на строке 61
+
+2021-07-01T08:28:28+00:00 CRITICAL syntax error, unexpected ')' in C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets\class-wp-widget-meta.php on line 94
+
+2021-07-01T08:28:33+00:00 CRITICAL syntax error, unexpected ')' in C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets\class-wp-widget-meta.php on line 94
+
+2021-07-01T08:28:45+00:00 CRITICAL syntax error, unexpected ')' in C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets\class-wp-widget-meta.php on line 94
+
+2021-07-01T08:28:49+00:00 CRITICAL syntax error, unexpected ')' in C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets\class-wp-widget-meta.php on line 94
+
+2021-07-01T08:28:55+00:00 CRITICAL syntax error, unexpected '>' in C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets\class-wp-widget-meta.php on line 89
+
+2021-07-01T08:29:00+00:00 CRITICAL syntax error, unexpected '>' in C:\xampp\htdocs\gct\extremeTuning\wp-includes\widgets\class-wp-widget-meta.php on line 89
+

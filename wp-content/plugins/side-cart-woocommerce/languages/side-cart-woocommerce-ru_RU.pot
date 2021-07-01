@@ -1,0 +1,56 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-05-27 00:03+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-xoo-wsc-cart.php:134
+msgid "Товар удален"
+msgstr ""
+
+#: includes/class-xoo-wsc-cart.php:136
+msgid "Отменить?"
+msgstr ""
+
+#: includes/class-xoo-wsc-cart.php:140
+msgid "Товар обновлен"
+msgstr ""
+
+#: includes/class-xoo-wsc-frontend.php:82
+msgid "Только %s% наличии"
+msgstr ""
+
+#: includes/class-xoo-wsc-frontend.php:83
+msgid "Товар можно приобрести только в количестве, кратном %s%"
+msgstr ""
+
+#: includes/class-xoo-wsc-frontend.php:84
+msgid "Пожалуйста, используйте форму оформления заказа, чтобы рассчитать доставку"
+msgstr ""
+
+#: includes/class-xoo-wsc-frontend.php:85
+msgid "Пожалуйста, введите промокод"
+msgstr ""
+
+#: templates/global/body/product.php:56
+msgid "Цена: "
+msgstr ""
+
+#: templates/global/body/product.php:71
+msgid "Кол-во:"
+msgstr ""
+
+#: templates/xoo-wsc-body.php:30
+msgid "Пустая корзина"
+msgstr ""

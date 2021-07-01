@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Ukr Shipping\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "Новая почта"
+msgstr "Нова пошта"
+
+msgid "Укажите отделение доставки"
+msgstr "Вкажіть відділення доставки"
+
+msgid "Выберите область"
+msgstr "Оберіть область"
+
+msgid "Выберите город"
+msgstr "Оберіть місто"
+
+msgid "Выберите отделение"
+msgstr "Оберіть відділення"
+
+msgid "Нужна адресная доставка"
+msgstr "Потрібна адресна доставка"
+
+msgid "Введите адрес"
+msgstr "Введіть адресу"
+
+msgid "Ничего не найдено"
+msgstr "Нічого не здайдено"
+
+msgid "checkout_validation_message"
+msgstr "Вкажіть адресу <strong>Нової Пошти</strong>"
+
+msgid "nav_item_premium"
+msgstr "Premium версія"
+
+# top panel
+msgid "top_panel_docs"
+msgstr "Документація"
+
+msgid "top_panel_premium"
+msgstr "Premium версія"
+
+# options page
+msgid "options_page_title"
+msgstr "Налаштування - WC Ukr Shipping"
+
+msgid "options_page_heading"
+msgstr "Налаштування"
+
+msgid "options_btn_save"
+msgstr "Зберегти"
+
+msgid "options_tab_common"
+msgstr "Загальні"
+
+msgid "options_tab_shipping"
+msgstr "Доставка"
+
+msgid "options_tab_translates"
+msgstr "Переклади"
+
+msgid "options_label_api_key"
+msgstr "API ключ"
+
+msgid "options_label_fixed_price"
+msgstr "Фіксована ціна за доставку"
+
+msgid "options_label_warehouse_lang"
+msgstr "Мова відображення міст та відділень"
+
+msgid "options_warehouse_lang_ru"
+msgstr "Російська"
+
+msgid "options_warehouse_lang_ua"
+msgstr "Українська"
+
+msgid "options_label_field_position"
+msgstr "Позиція блоку на сторінці оформлення замовлення"
+
+msgid "options_field_position_main"
+msgstr "Основна секція"
+
+msgid "options_field_position_additional"
+msgstr "Додаткова секція"
+
+msgid "options_tooltip_field_position"
+msgstr ""
+"Вибір опції \"Додаткова секція\" розташує блок вибору відділення перед полем "
+"\"Примітка до замовлення\""
+
+msgid "options_label_address_shipping"
+msgstr "Включити блок адресної доставки"
+
+msgid "options_label_new_ui"
+msgstr "Використовувати новий UI"
+
+msgid "options_label_show_poshtomats"
+msgstr "Показувати поштомати"
+
+msgid "options_label_translates_type"
+msgstr "Завантажувати переклади з"
+
+msgid "options_translates_type_options"
+msgstr "Налаштувань плагіну"
+
+msgid "options_translates_type_mo_files"
+msgstr "mo файлів перекладу"
+
+msgid "options_tooltip_translates_type"
+msgstr ""
+"Якщо ви використовуєте мовні плагіни по типу WPML - виберіть значення "
+"перекладів з mo файлів. Так ви отримаєте переклади на 3 мови за "
+"замовчуванням (російська, українська, англійська), а також можливість "
+"переводити рядки за вашим бажанням (використовуючи наприклад WPML String "
+"Translations)."
+
+msgid "options_label_spinner_color"
+msgstr "Колір спінера у front-end"
+
+msgid "options_label_warehouse_update"
+msgstr "Інформація про відділення Нової Пошти"
+
+msgid "options_btn_warehouse_update"
+msgstr "Оновити відділення"
+
+msgid "save_options_success"
+msgstr "Налаштування успішно збережені"
+
+# Checkout
+msgid "checkout_fields_title"
+msgstr "Адреса доставки"
+
+msgid "checkout_shipping_type_warehouse"
+msgstr "у відділення"
+
+msgid "checkout_shipping_type_doors"
+msgstr "за адресою"
+
+msgid "checkout_city_placeholder"
+msgstr "Місто"
+
+msgid "checkout_warehouse_placeholder"
+msgstr "Відділення"
+
+msgid "checkout_custom_address_placeholder"
+msgstr "Введіть адресу"
+
+msgid "checkout_text_search"
+msgstr "Введіть значення для пошуку"
+
+msgid "checkout_text_loading"
+msgstr "Завантаження..."
+
+msgid "checkout_text_more"
+msgstr "Завантажити ще"
+
+msgid "checkout_text_not_found"
+msgstr "Нічого не знайдено"
+
+msgid "checkout_text_more_chars"
+msgstr "Вкажіть більше символів для пошуку"

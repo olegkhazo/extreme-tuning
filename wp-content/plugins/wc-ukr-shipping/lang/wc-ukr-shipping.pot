@@ -1,0 +1,151 @@
+msgid "Новая почта"
+msgstr ""
+
+msgid "Укажите отделение доставки"
+msgstr ""
+
+msgid "Выберите область"
+msgstr ""
+
+msgid "Выберите город"
+msgstr ""
+
+msgid "Выберите отделение"
+msgstr ""
+
+msgid "Нужна адресная доставка"
+msgstr ""
+
+msgid "Введите адрес"
+msgstr ""
+
+msgid "Ничего не найдено"
+msgstr ""
+
+msgid "checkout_validation_message"
+msgstr ""
+
+# nav
+msgid "nav_item_premium"
+msgstr ""
+
+# top panel
+
+msgid "top_panel_docs"
+msgstr ""
+
+msgid "top_panel_premium"
+msgstr ""
+
+# options page
+msgid "options_page_title"
+msgstr ""
+
+msgid "options_page_heading"
+msgstr ""
+
+msgid "options_btn_save"
+msgstr ""
+
+msgid "options_tab_common"
+msgstr ""
+
+msgid "options_tab_shipping"
+msgstr ""
+
+msgid "options_tab_translates"
+msgstr ""
+
+msgid "options_label_api_key"
+msgstr ""
+
+msgid "options_label_fixed_price"
+msgstr ""
+
+msgid "options_label_warehouse_lang"
+msgstr ""
+
+msgid "options_warehouse_lang_ru"
+msgstr ""
+
+msgid "options_warehouse_lang_ua"
+msgstr ""
+
+msgid "options_label_field_position"
+msgstr ""
+
+msgid "options_field_position_main"
+msgstr ""
+
+msgid "options_field_position_additional"
+msgstr ""
+
+msgid "options_tooltip_field_position"
+msgstr ""
+
+msgid "options_label_address_shipping"
+msgstr ""
+
+msgid "options_label_new_ui"
+msgstr ""
+
+msgid "options_label_show_poshtomats"
+msgstr ""
+
+msgid "options_label_translates_type"
+msgstr ""
+
+msgid "options_translates_type_options"
+msgstr ""
+
+msgid "options_translates_type_mo_files"
+msgstr ""
+
+msgid "options_tooltip_translates_type"
+msgstr ""
+
+msgid "options_label_spinner_color"
+msgstr ""
+
+msgid "options_label_warehouse_update"
+msgstr ""
+
+msgid "options_btn_warehouse_update"
+msgstr ""
+
+msgid "save_options_success"
+msgstr ""
+
+# Checkout
+msgid "checkout_fields_title"
+msgstr ""
+
+msgid "checkout_shipping_type_warehouse"
+msgstr ""
+
+msgid "checkout_shipping_type_doors"
+msgstr ""
+
+msgid "checkout_city_placeholder"
+msgstr ""
+
+msgid "checkout_warehouse_placeholder"
+msgstr ""
+
+msgid "checkout_custom_address_placeholder"
+msgstr ""
+
+msgid "checkout_text_search"
+msgstr ""
+
+msgid "checkout_text_loading"
+msgstr ""
+
+msgid "checkout_text_more"
+msgstr ""
+
+msgid "checkout_text_not_found"
+msgstr ""
+
+msgid "checkout_text_more_chars"
+msgstr ""
