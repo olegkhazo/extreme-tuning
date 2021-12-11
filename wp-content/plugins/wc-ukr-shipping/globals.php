@@ -30,3 +30,12 @@ if ( ! function_exists('wc_ukr_shipping_is_checkout')) {
     }
 
 }
+
+if ( ! function_exists('wcus_container')) {
+
+    function wcus_container(): \kirillbdev\WCUSCore\Foundation\Container
+    {
+        return \kirillbdev\WCUkrShipping\Foundation\WCUkrShipping::instance()->getContainer();
+    }
+
+}

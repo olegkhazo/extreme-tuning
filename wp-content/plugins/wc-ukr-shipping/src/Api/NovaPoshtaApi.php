@@ -2,12 +2,9 @@
 
 namespace kirillbdev\WCUkrShipping\Api;
 
-use kirillbdev\WCUkrShipping\Contracts\ApiResponseInterface;
 use kirillbdev\WCUkrShipping\Contracts\HttpClient;
 use kirillbdev\WCUkrShipping\Exceptions\ApiServiceException;
-use kirillbdev\WCUkrShipping\Http\Response\CollectionResponse;
-use kirillbdev\WCUkrShipping\Http\Response\ErrorResponse;
-use kirillbdev\WCUkrShipping\Http\Response\ExceptionResponse;
+use kirillbdev\WCUkrShipping\Http\WpHttpClient;
 
 if ( ! defined('ABSPATH')) {
     exit;
@@ -30,30 +27,21 @@ class NovaPoshtaApi
      */
     private $apiKey;
 
-    /**
-     * @param HttpClient $client
-     */
-    public function __construct($client)
+    public function __construct()
     {
-        $this->client = $client;
+        $this->client = wcus_container()->make(WpHttpClient::class);
         $this->apiKey = get_option('wc_ukr_shipping_np_api_key', '');
     }
 
-    /**
-     * @return ApiResponseInterface
-     */
     public function getAreas()
     {
         $data['modelName'] = 'Address';
         $data['calledMethod'] = 'getAreas';
         $data['apiKey'] = $this->apiKey;
 
-        return $this->sendLoadRequest($data);
+        return $this->sendRequest($data);
     }
 
-    /**
-     * @return ApiResponseInterface
-     */
     public function getCities($page)
     {
         $data['modelName'] = 'Address';
@@ -61,15 +49,12 @@ class NovaPoshtaApi
         $data['apiKey'] = $this->apiKey;
         $data['methodProperties'] = [
             'Page' => $page,
-            'Limit' => 300
+            'Limit' => apply_filters('wcus_api_city_limit', 500)
         ];
 
-        return $this->sendLoadRequest($data);
+        return $this->sendRequest($data);
     }
 
-    /**
-     * @return ApiResponseInterface
-     */
     public function getWarehouses($page)
     {
         $data['modelName'] = 'AddressGeneral';
@@ -77,31 +62,10 @@ class NovaPoshtaApi
         $data['apiKey'] = $this->apiKey;
         $data['methodProperties'] = [
             'Page' => $page,
-            'Limit' => 300
+            'Limit' => apply_filters('wcus_api_warehouse_limit', 500)
         ];
 
-        return $this->sendLoadRequest($data);
-    }
-
-    /**
-     * @param array $data
-     *
-     * @return ApiResponseInterface
-     */
-    private function sendLoadRequest($data)
-    {
-        try {
-            $response = $this->sendRequest($data);
-
-            if ($response['success']) {
-                return new CollectionResponse($response['data']);
-            }
-
-            return new ErrorResponse($response);
-        }
-        catch (ApiServiceException $e) {
-            return new ExceptionResponse($e);
-        }
+        return $this->sendRequest($data);
     }
 
     /**

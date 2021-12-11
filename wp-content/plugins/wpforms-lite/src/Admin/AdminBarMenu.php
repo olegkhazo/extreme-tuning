@@ -118,6 +118,11 @@ class AdminBarMenu {
 
 					if ( ! notifications ) {
 						var menu = document.getElementById( 'wp-admin-bar-wpforms-menu-default' );
+
+						if ( ! menu ) {
+							return;
+						}
+
 						menu.insertAdjacentHTML( 'afterBegin', template.innerHTML );
 					} else {
 						notifications.insertAdjacentHTML( 'afterend', template.innerHTML );
@@ -315,6 +320,10 @@ class AdminBarMenu {
 
 		foreach ( $forms as $form ) {
 			$form_id = absint( $form['id'] );
+
+			if ( empty( $form_id ) ) {
+				continue;
+			}
 
 			/* translators: %d - Form ID */
 			$form_title = sprintf( esc_html__( 'Form ID: %d', 'wpforms-lite' ), $form_id );

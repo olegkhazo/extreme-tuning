@@ -1,5 +1,5 @@
 <?php exit; ?>{
-    "version": "2.1.5",
+    "version": "2.1.8",
     "cluster.messagebus.debug": false,
     "cluster.messagebus.enabled": false,
     "cluster.messagebus.sns.region": "",
@@ -60,6 +60,7 @@
     ],
     "docroot_fix.enable": false,
     "lazyload.enabled": true,
+    "lazyload.threshold": "",
     "lazyload.process_img": true,
     "lazyload.process_background": true,
     "lazyload.googlemaps.google_maps_easy": false,
@@ -536,7 +537,9 @@
     "varnish.configuration_overloaded": false,
     "varnish.enabled": false,
     "varnish.debug": false,
-    "varnish.servers": [],
+    "varnish.servers": [
+        ""
+    ],
     "browsercache.configuration_overloaded": false,
     "browsercache.enabled": true,
     "browsercache.rewrite": false,
@@ -864,6 +867,7 @@
             ]
         }
     },
+    "robots_block.enable": false,
     "common.track_usage": true,
     "common.tweeted": false,
     "config.check": true,
@@ -895,5 +899,12 @@
     "plugin.license_key": "",
     "plugin.type": "",
     "jquerymigrate.disabled": false,
-    "lazyload_process_background": true
+    "lazyload_process_background": true,
+    "fragmentcache": {
+        "engine": ""
+    },
+    "pgcache.bad_behavior_path": "",
+    "newrelic": {
+        "monitoring_type": "apm"
+    }
 }

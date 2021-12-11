@@ -2,6 +2,7 @@
 
 namespace kirillbdev\WCUkrShipping\Modules\Core;
 
+use kirillbdev\WCUkrShipping\DB\Migrations\AddColumnWarehouseType;
 use kirillbdev\WCUSCore\Contracts\ModuleInterface;
 use kirillbdev\WCUSCore\DB\Migrator;
 use kirillbdev\WCUkrShipping\DB\Migrations\CreateAreasTable;
@@ -37,6 +38,7 @@ class Activator implements ModuleInterface
         $this->migrator->addMigration(new CreateCitiesTable());
         $this->migrator->addMigration(new CreateWarehousesTable());
         $this->migrator->addMigration(new CreateIndexes());
+        $this->migrator->addMigration(new AddColumnWarehouseType());
         $this->migrator->run();
     }
 }

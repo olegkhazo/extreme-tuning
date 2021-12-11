@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'bd78d738a86db6599893a258f9fddde2616125dc',
+    'reference' => '5337996386baae8bab78ff63db222a3022706083',
     'name' => 'kirillbdev/wc-ukr-shipping',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'bd78d738a86db6599893a258f9fddde2616125dc',
+      'reference' => '5337996386baae8bab78ff63db222a3022706083',
     ),
     'kirillbdev/wcus-core' => 
     array (

@@ -4,6 +4,7 @@ namespace kirillbdev\WCUkrShipping\Modules\Frontend;
 
 use kirillbdev\WCUkrShipping\Services\AddressService;
 use kirillbdev\WCUkrShipping\Services\TranslateService;
+use kirillbdev\WCUkrShipping\Traits\StateInitiatorTrait;
 use kirillbdev\WCUSCore\Contracts\ModuleInterface;
 
 if ( ! defined('ABSPATH')) {
@@ -12,6 +13,8 @@ if ( ! defined('ABSPATH')) {
 
 class AssetsLoader implements ModuleInterface
 {
+    use StateInitiatorTrait;
+
     private $translateService;
 
     public function __construct(TranslateService $translateService)
@@ -21,8 +24,9 @@ class AssetsLoader implements ModuleInterface
 
     public function init()
     {
-        add_action('wp_head', [$this, 'loadCheckoutStyles']);
-        add_action('wp_enqueue_scripts', [$this, 'loadFrontendAssets']);
+        add_action('wp_head', [ $this, 'loadCheckoutStyles' ]);
+        add_action('wp_head', [ $this, 'initState' ]);
+        add_action('wp_enqueue_scripts', [ $this, 'loadFrontendAssets' ]);
     }
 
     public function loadFrontendAssets()
@@ -91,7 +95,10 @@ class AssetsLoader implements ModuleInterface
             'nonce' => wp_create_nonce('wc-ukr-shipping'),
             'disableDefaultBillingFields' => apply_filters('wc_ukr_shipping_prevent_disable_default_fields', false) === false ?
                 1 :
-                0
+                0,
+            'options' => [
+                'address_shipping_enable' => (int)wc_ukr_shipping_get_option('wc_ukr_shipping_address_shipping')
+            ]
         ];
 
         if ((int)get_option('wcus_checkout_new_ui')) {

@@ -16,6 +16,6 @@
 	<label for="<?php echo esc_attr( $unique_id ); ?>">
 		<span class="screen-reader-text"><?php echo esc_html_x( 'Search for:', 'label', 'inspiro' ); ?></span>
 	</label>
-	<input type="search" id="<?php echo esc_attr( $unique_id ); ?>" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'inspiro' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-	<button type="submit" class="search-submit"><?php echo inspiro_get_theme_svg( 'search' ); ?><span><?php echo esc_html_x( 'Search', 'submit button', 'inspiro' ); ?></span></button>
+	<input type="search" id="<?php echo esc_attr( $unique_id ); ?>" class="search-field" placeholder="<?php echo esc_attr_x( 'Поиск &hellip;', 'placeholder', 'inspiro' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+	<button type="submit" class="search-submit"><?php echo inspiro_get_theme_svg( 'search' ); ?><span><?php echo esc_html_x( 'Поиск', 'submit button', 'inspiro' ); ?></span></button>
 </form>

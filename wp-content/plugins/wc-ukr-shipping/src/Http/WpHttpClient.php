@@ -39,7 +39,7 @@ class WpHttpClient implements HttpClient
     {
         $response = wp_remote_post($url, [
             'headers' => $headers,
-            'timeout' => apply_filters('wcus_http_post_timeout', 10),
+            'timeout' => apply_filters('wcus_http_post_timeout', 15),
             'body' => $body
         ]);
 

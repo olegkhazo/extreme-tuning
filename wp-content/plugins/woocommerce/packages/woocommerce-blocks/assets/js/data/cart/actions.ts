@@ -8,6 +8,7 @@ import type {
 	CartResponseItem,
 	CartBillingAddress,
 	CartShippingAddress,
+	ExtensionCartUpdateArgs,
 } from '@woocommerce/types';
 import { ReturnOrGeneratorYieldUnion } from '@automattic/data-stores';
 import { camelCase, mapKeys } from 'lodash';
@@ -28,14 +29,16 @@ import type { ResponseError } from '../types';
  *
  * @param  {CartResponse}      response
  */
-export const receiveCart = ( response: CartResponse ) => {
+export const receiveCart = (
+	response: CartResponse
+): { type: string; response: Cart } => {
 	const cart = ( mapKeys( response, ( _, key ) =>
 		camelCase( key )
 	) as unknown ) as Cart;
 	return {
 		type: types.RECEIVE_CART,
 		response: cart,
-	} as const;
+	};
 };
 
 /**
@@ -164,6 +167,36 @@ export const updateCartFragments = () =>
 	( {
 		type: types.UPDATE_LEGACY_CART_FRAGMENTS,
 	} as const );
+
+/**
+ * POSTs to the /cart/extensions endpoint with the data supplied by the extension.
+ *
+ * @param {Object} args The data to be posted to the endpoint
+ */
+export function* applyExtensionCartUpdate(
+	args: ExtensionCartUpdateArgs
+): Generator< unknown, CartResponse, { response: CartResponse } > {
+	try {
+		const { response } = yield apiFetchWithHeaders( {
+			path: '/wc/store/cart/extensions',
+			method: 'POST',
+			data: { namespace: args.namespace, data: args.data },
+			cache: 'no-store',
+		} );
+		yield receiveCart( response );
+		yield updateCartFragments();
+		return response;
+	} catch ( error ) {
+		yield receiveError( error );
+		// If updated cart state was returned, also update that.
+		if ( error.data?.cart ) {
+			yield receiveCart( error.data.cart );
+		}
+
+		// Re-throw the error.
+		throw error;
+	}
+}
 
 /**
  * Applies a coupon code and either invalidates caches, or receives an error if
@@ -409,9 +442,7 @@ export function* selectShippingRate(
 }
 
 type BillingAddressShippingAddress = {
-	// eslint-disable-next-line camelcase
 	billing_address: CartBillingAddress;
-	// eslint-disable-next-line camelcase
 	shipping_address: CartShippingAddress;
 };
 

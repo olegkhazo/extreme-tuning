@@ -9,6 +9,7 @@ import ProductName from '@woocommerce/base-components/product-name';
 import {
 	useStoreCartItemQuantity,
 	useStoreEvents,
+	useStoreCart,
 } from '@woocommerce/base-context/hooks';
 import {
 	ProductBackorderBadge,
@@ -23,13 +24,12 @@ import {
 } from '@woocommerce/price-format';
 import {
 	__experimentalApplyCheckoutFilter,
-	mustBeString,
 	mustContain,
 } from '@woocommerce/blocks-checkout';
 import Dinero from 'dinero.js';
-import { useCallback, useMemo } from '@wordpress/element';
+import { useMemo } from '@wordpress/element';
 import type { CartItem } from '@woocommerce/type-defs/cart';
-import { objectHasProp } from '@woocommerce/base-utils';
+import { objectHasProp } from '@woocommerce/types';
 import { getSetting } from '@woocommerce/settings';
 
 /**
@@ -45,6 +45,8 @@ const getAmountFromRawPrice = (
 ) => {
 	return priceObject.convertPrecision( currency.minorUnit ).getAmount();
 };
+
+const productPriceValidation = ( value ) => mustContain( value, '<price/>' );
 
 /**
  * Cart line item table row component.
@@ -99,7 +101,7 @@ const CartLineItemRow = ( {
 			line_subtotal: '0',
 			line_subtotal_tax: '0',
 		},
-		extensions = {},
+		extensions,
 	} = lineItem;
 
 	const {
@@ -110,16 +112,17 @@ const CartLineItemRow = ( {
 	} = useStoreCartItemQuantity( lineItem );
 	const { dispatchStoreEvent } = useStoreEvents();
 
-	const productPriceValidation = useCallback(
-		( value ) => mustBeString( value ) && mustContain( value, '<price/>' ),
-		[]
-	);
+	// Prepare props to pass to the __experimentalApplyCheckoutFilter filter.
+	// We need to pluck out receiveCart.
+	// eslint-disable-next-line no-unused-vars
+	const { receiveCart, ...cart } = useStoreCart();
 	const arg = useMemo(
 		() => ( {
 			context: 'cart',
 			cartItem: lineItem,
+			cart,
 		} ),
-		[ lineItem ]
+		[ lineItem, cart ]
 	);
 	const priceCurrency = getCurrencyFromPriceResponse( prices );
 	const name = __experimentalApplyCheckoutFilter( {
@@ -127,7 +130,6 @@ const CartLineItemRow = ( {
 		defaultValue: initialName,
 		extensions,
 		arg,
-		validation: mustBeString,
 	} );
 
 	const regularAmountSingle = Dinero( {
@@ -303,4 +305,5 @@ const CartLineItemRow = ( {
 		</tr>
 	);
 };
+
 export default CartLineItemRow;

@@ -3,6 +3,7 @@
 namespace kirillbdev\WCUkrShipping\Model;
 
 use kirillbdev\WCUkrShipping\Contracts\AddressInterface;
+use kirillbdev\WCUkrShipping\Contracts\Customer\CustomerStorageInterface;
 use kirillbdev\WCUkrShipping\Contracts\OrderDataInterface;
 use kirillbdev\WCUkrShipping\Services\CalculationService;
 
@@ -18,11 +19,17 @@ class OrderShipping
     private $item;
 
     /**
+     * @var CustomerStorageInterface
+     */
+    private $customerStorage;
+
+    /**
      * @param \WC_Order_Item_Shipping $item
      */
     public function __construct($item)
     {
         $this->item = $item;
+        $this->customerStorage = wcus_container()->make(CustomerStorageInterface::class);
     }
 
     /**
@@ -30,6 +37,8 @@ class OrderShipping
      */
     public function save($data)
     {
+        $this->customerStorage->remove(CustomerStorageInterface::KEY_LAST_CITY_REF);
+        $this->customerStorage->remove(CustomerStorageInterface::KEY_LAST_WAREHOUSE_REF);
         $address = $data->getShippingAddress();
 
         if ($data->isAddressShipping()) {
@@ -41,7 +50,6 @@ class OrderShipping
 
         $calculationService = new CalculationService();
         $cost = $calculationService->calculateCost($data);
-
         $this->item->set_total($cost);
     }
 
@@ -64,6 +72,7 @@ class OrderShipping
         }
         $this->updateMeta('wcus_city_ref', $address->getCityRef());
         $this->updateMeta('wcus_address', $address->getCustomAddress());
+        $this->customerStorage->add(CustomerStorageInterface::KEY_LAST_CITY_REF, sanitize_text_field($address->getCityRef()));
     }
 
     /**
@@ -76,5 +85,7 @@ class OrderShipping
         }
         $this->updateMeta('wcus_city_ref', $address->getCityRef());
         $this->updateMeta('wcus_warehouse_ref', $address->getWarehouseRef());
+        $this->customerStorage->add(CustomerStorageInterface::KEY_LAST_CITY_REF, sanitize_text_field($address->getCityRef()));
+        $this->customerStorage->add(CustomerStorageInterface::KEY_LAST_WAREHOUSE_REF, sanitize_text_field($address->getWarehouseRef()));
     }
 }

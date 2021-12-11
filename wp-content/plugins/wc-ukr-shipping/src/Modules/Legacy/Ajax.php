@@ -29,7 +29,7 @@ class Ajax implements ModuleInterface
 
     public function __construct(TranslateService $translateService)
     {
-        $this->api = new NovaPoshtaApi(new WpHttpClient());
+        $this->api = new NovaPoshtaApi();
         $this->novaPoshtaRepository = new NovaPoshtaRepository();
         $this->optionsRepository = new OptionsRepository();
         $this->translator = $translateService;
@@ -39,7 +39,6 @@ class Ajax implements ModuleInterface
     {
         if (wp_doing_ajax()) {
             $this->initRoutes();
-            $this->initAdminRoutes();
         }
     }
 
@@ -54,18 +53,6 @@ class Ajax implements ModuleInterface
 
         add_action('wp_ajax_wcus_calculate_cost', [ $this, 'apiV2CalculateCost' ]);
         add_action('wp_ajax_nopriv_wcus_calculate_cost', [ $this, 'apiV2CalculateCost' ]);
-    }
-
-    public function initAdminRoutes()
-    {
-        // Options Areas Load to DB
-        add_action('wp_ajax_wc_ukr_shipping_load_areas', [$this, 'loadAreas']);
-
-        // Options Cities load to DB
-        add_action('wp_ajax_wc_ukr_shipping_load_cities', [$this, 'loadCities']);
-
-        // Options Warehouses load to DB
-        add_action('wp_ajax_wc_ukr_shipping_load_warehouses', [$this, 'loadWarehouses']);
     }
 
     public function apiV2GetCities()
@@ -145,63 +132,6 @@ class Ajax implements ModuleInterface
             'data' => [
                 'shipping' => $dynamicLabel,
                 'total' => wc()->cart->get_total()
-            ]
-        ]);
-    }
-
-    public function loadAreas()
-    {
-        $this->apiV2ValidateRequest();
-
-        $response = $this->api->getAreas();
-
-        if ($response->hasErrors()) {
-            wp_send_json($response);
-        }
-
-        $this->novaPoshtaRepository->saveAreas($response);
-
-        wp_send_json([
-            'success' => true
-        ]);
-    }
-
-    public function loadCities()
-    {
-        $this->apiV2ValidateRequest();
-
-        $response = $this->api->getCities((int)$_POST['page']);
-
-        if ($response->hasErrors()) {
-            wp_send_json($response);
-        }
-
-        $this->novaPoshtaRepository->saveCities($response, (int)$_POST['page']);
-
-        wp_send_json([
-            'success' => true,
-            'data' => [
-                'loaded' => 0 === $response->getCount()
-            ]
-        ]);
-    }
-
-    public function loadWarehouses()
-    {
-        $this->apiV2ValidateRequest();
-
-        $response = $this->api->getWarehouses((int)$_POST['page']);
-
-        if ($response->hasErrors()) {
-            wp_send_json($response);
-        }
-
-        $this->novaPoshtaRepository->saveWarehouses($response, (int)$_POST['page']);
-
-        wp_send_json([
-            'success' => true,
-            'data' => [
-                'loaded' => 0 === $response->getCount()
             ]
         ]);
     }

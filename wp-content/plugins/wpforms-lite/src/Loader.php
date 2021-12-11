@@ -38,6 +38,7 @@ class Loader {
 	protected function populate_classes() {
 
 		$this->populate_admin();
+		$this->populate_builder();
 		$this->populate_migrations();
 		$this->populate_capabilities();
 		$this->populate_tasks();
@@ -45,6 +46,7 @@ class Loader {
 		$this->populate_smart_tags();
 		$this->populate_logger();
 		$this->populate_education();
+		$this->populate_robots();
 	}
 
 	/**
@@ -79,6 +81,10 @@ class Loader {
 				'id'   => 'notice',
 			],
 			[
+				'name' => 'Admin\Addons\AddonsCache',
+				'id'   => 'addons_cache',
+			],
+			[
 				'name' => 'Admin\Addons\Addons',
 				'id'   => 'addons',
 			],
@@ -110,10 +116,6 @@ class Loader {
 				'name' => 'Admin\SiteHealth',
 			],
 			[
-				'name' => 'Admin\Builder\Help',
-				'id'   => 'builder_help',
-			],
-			[
 				'name' => 'Admin\Settings\Captcha',
 				'hook' => 'admin_init',
 			],
@@ -124,6 +126,40 @@ class Loader {
 			[
 				'name' => 'Admin\Pages\Addons',
 				'id'   => 'addons_page',
+			],
+			[
+				'name' => 'Forms\Fields\Richtext\EntryViewContent',
+			]
+		);
+	}
+
+	/**
+	 * Populate Form Builder related classes.
+	 *
+	 * @since 1.6.8
+	 */
+	private function populate_builder() {
+
+		array_push(
+			$this->classes,
+			[
+				'name' => 'Admin\Builder\Help',
+				'id'   => 'builder_help',
+			],
+			[
+				'name' => 'Admin\Builder\Shortcuts',
+			],
+			[
+				'name' => 'Admin\Builder\TemplatesCache',
+				'id'   => 'builder_templates_cache',
+			],
+			[
+				'name' => 'Admin\Builder\TemplateSingleCache',
+				'id'   => 'builder_template_single',
+			],
+			[
+				'name' => 'Admin\Builder\Templates',
+				'id'   => 'builder_templates',
 			]
 		);
 	}
@@ -255,9 +291,9 @@ class Loader {
 			'Builder\Settings',
 			'Builder\Providers',
 			'Builder\Payments',
-			'Builder\FormTemplates',
 			'Builder\DidYouKnow',
 			'Builder\Geolocation',
+			'Builder\Confirmations',
 			'Admin\DidYouKnow',
 			'Admin\Settings\Integrations',
 			'Admin\Settings\Geolocation',
@@ -273,5 +309,18 @@ class Loader {
 				]
 			);
 		}
+	}
+
+	/**
+	 * Populate robots loaded class.
+	 *
+	 * @since 1.7.0
+	 */
+	private function populate_robots() {
+
+		$this->classes[] = [
+			'name' => 'Robots',
+			'run'  => 'hooks',
+		];
 	}
 }

@@ -117,7 +117,7 @@ if ( ! function_exists( 'inspiro_author_link' ) ) {
 	function inspiro_author_link() {
 		return sprintf(
 			'<span class="entry-author">%s <a class="url fn n" href="%s">%s</a></span>',
-			__( 'by', 'inspiro' ),
+			__( 'от', 'inspiro' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			get_the_author()
 		);
@@ -131,11 +131,11 @@ if ( ! function_exists( 'inspiro_comments_link' ) ) {
 	function inspiro_comments_link() {
 		echo '<span class="entry-comments">';
 		comments_popup_link(
-			__( '0 comments', 'inspiro' ),
-			__( '1 comment', 'inspiro' ),
-			__( '% comments', 'inspiro' ),
+			__( '0 комментариев', 'inspiro' ),
+			__( '1 комментарий', 'inspiro' ),
+			__( '% комментариев', 'inspiro' ),
 			'',
-			__( 'Comments are Disabled', 'inspiro' )
+			__( 'Комментарии отключены', 'inspiro' )
 		);
 		echo '</span>';
 	}

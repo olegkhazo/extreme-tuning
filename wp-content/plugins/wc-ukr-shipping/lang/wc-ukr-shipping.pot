@@ -113,6 +113,9 @@ msgstr ""
 msgid "options_btn_warehouse_update"
 msgstr ""
 
+msgid "options_label_save_customer_address"
+msgstr ""
+
 msgid "save_options_success"
 msgstr ""
 

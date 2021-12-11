@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ru-RU" class="no-js">
+<head><style>img.lazy{min-height:1px}</style><link rel="preload" href="https://www.extremetuning.com.ua/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js" as="script">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="facebook-domain-verification" content="4ugkvj5vm6pl7mshzla7uvfodjxcwu" />
+	<meta name="p:domain_verify" content="b34a8ce4da6f697cb3863082a46c20a6"/>
+	<meta name="yandex-verification" content="f7d5bed2c6dd43a0" />
+	<link rel="shortcut icon" href="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/white_logo.png" type="image/x-icon">
+	<script src="//code-ya.jivosite.com/widget/6LUaYJor3x" async></script>
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Extreme Tuning - тюнинг и аксессуары для лыж и сноуборда</title>
+	<meta name="description" content="Сноуборд и лыжные тюнинг аксессуары. Разработки и товары которые помогут решить проблемы лыжников и сноубордистов на горнолыжном курорте." />
+	<link rel="canonical" href="https://www.extremetuning.com.ua/" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Сноуборд и лыжные тюнинг аксессуары" />
+	<meta property="og:description" content="Идеи и разработки, без которых вы больше не сможете обходиться на склоне." />
+	<meta property="og:url" content="https://www.extremetuning.com.ua/" />
+	<meta property="og:site_name" content="Extreme Tuning" />
+	<meta property="article:publisher" content="https://www.facebook.com/ext.tuning/" />
+	<meta property="article:modified_time" content="2021-10-18T11:39:48+00:00" />
+	<meta property="og:image" content="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain-1024x576.png" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="576" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Сноуборд и лыжные тюнинг аксессуары" />
+	<meta name="twitter:description" content="Идеи и разработки, без которых вы больше не сможете обходиться на склоне." />
+	<meta name="twitter:image" content="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain.png" />
+	<meta name="twitter:site" content="@ExtremeTuning3" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 минута" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.extremetuning.com.ua/#organization","name":"Extreme Tuning","url":"https://www.extremetuning.com.ua/","sameAs":["https://www.facebook.com/ext.tuning/","https://www.instagram.com/extuning","https://www.youtube.com/channel/UCri3lj2yscsgrfPk37DsWVQ","https://www.pinterest.ru/extreme_tuning/","https://twitter.com/ExtremeTuning3"],"logo":{"@type":"ImageObject","@id":"https://www.extremetuning.com.ua/#logo","inLanguage":"ru-RU","url":"https://www.extremetuning.com.ua/wp-content/uploads/2021/08/cropped-black_backgound-1-1.png","contentUrl":"https://www.extremetuning.com.ua/wp-content/uploads/2021/08/cropped-black_backgound-1-1.png","width":512,"height":512,"caption":"Extreme Tuning"},"image":{"@id":"https://www.extremetuning.com.ua/#logo"}},{"@type":"WebSite","@id":"https://www.extremetuning.com.ua/#website","url":"https://www.extremetuning.com.ua/","name":"Extreme Tuning","description":"\u0422\u044e\u043d\u0438\u043d\u0433 \u0434\u043b\u044f \u044d\u043a\u0441\u0442\u0440\u0435\u043c\u0430\u043b\u044c\u043d\u044b\u0445 \u0432\u0438\u0434\u043e\u0432 \u0441\u043f\u043e\u0440\u0442\u0430","publisher":{"@id":"https://www.extremetuning.com.ua/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.extremetuning.com.ua/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"},{"@type":"ImageObject","@id":"https://www.extremetuning.com.ua/#primaryimage","inLanguage":"ru-RU","url":"https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain.png","contentUrl":"https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain.png","width":1922,"height":1081,"caption":"Snowboarding"},{"@type":"WebPage","@id":"https://www.extremetuning.com.ua/#webpage","url":"https://www.extremetuning.com.ua/","name":"Extreme Tuning - \u0442\u044e\u043d\u0438\u043d\u0433 \u0438 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b \u0434\u043b\u044f \u043b\u044b\u0436 \u0438 \u0441\u043d\u043e\u0443\u0431\u043e\u0440\u0434\u0430","isPartOf":{"@id":"https://www.extremetuning.com.ua/#website"},"about":{"@id":"https://www.extremetuning.com.ua/#organization"},"datePublished":"2021-08-06T13:23:24+00:00","dateModified":"2021-10-18T11:39:48+00:00","description":"\u0421\u043d\u043e\u0443\u0431\u043e\u0440\u0434 \u0438 \u043b\u044b\u0436\u043d\u044b\u0435 \u0442\u044e\u043d\u0438\u043d\u0433 \u0430\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b. \u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438 \u0438 \u0442\u043e\u0432\u0430\u0440\u044b \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043f\u043e\u043c\u043e\u0433\u0443\u0442 \u0440\u0435\u0448\u0438\u0442\u044c \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u044b \u043b\u044b\u0436\u043d\u0438\u043a\u043e\u0432 \u0438 \u0441\u043d\u043e\u0443\u0431\u043e\u0440\u0434\u0438\u0441\u0442\u043e\u0432 \u043d\u0430 \u0433\u043e\u0440\u043d\u043e\u043b\u044b\u0436\u043d\u043e\u043c \u043a\u0443\u0440\u043e\u0440\u0442\u0435.","breadcrumb":{"@id":"https://www.extremetuning.com.ua/#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://www.extremetuning.com.ua/"]}]},{"@type":"BreadcrumbList","@id":"https://www.extremetuning.com.ua/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<meta name="yandex-verification" content="f7d5bed2c6dd43a0" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Extreme Tuning &raquo; Лента" href="https://www.extremetuning.com.ua/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Extreme Tuning &raquo; Лента комментариев" href="https://www.extremetuning.com.ua/comments/feed/" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.extremetuning.com.ua\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='inspiro-google-fonts-css'  href='//fonts.googleapis.com/css?family=Inter%3A400%2C700%2C200%2C300%2C500%2C600%7CMontserrat%3A500%2C600%2C700&#038;display=swap&#038;ver=1.3.4' media='all' />
+<link rel='stylesheet' id='inspiro-style-css'  href='https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/css/minified/style.min.css?ver=1.3.4' media='all' />
+<style id='inspiro-style-inline-css'>
+body, button, input, select, textarea {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+}
+@media screen and (min-width: 782px) {
+body, button, input, select, textarea {
+font-size: 16px;
+line-height: 1.8;
+} }
+h1, h2, h3, h4, h5, h6 {
+font-weight: 700;
+line-height: 1.4;
+}
+.site-title {
+font-family: 'Inter', sans-serif;
+font-weight: 700;
+line-height: 1.25;
+}
+@media screen and (min-width: 782px) {
+.site-title {
+font-size: 80px;
+} }
+.site-description {
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+line-height: 1.8;
+}
+@media screen and (min-width: 782px) {
+.site-description {
+font-size: 20px;
+} }
+.custom-header-button {
+font-weight: 400;
+line-height: 1.8;
+}
+@media screen and (min-width: 782px) {
+.custom-header-button {
+font-size: 16px;
+} }
+.navbar-nav a {
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+line-height: 1.8;
+}
+@media screen and (min-width: 782px) {
+.navbar-nav a {
+font-size: 16px;
+} }
+@media screen and (max-width: 64em) {
+.navbar-nav li a {
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
+line-height: 1.8;
+} }
+
+</style>
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.extremetuning.com.ua/wp-includes/css/dist/block-library/style.min.css?ver=5.8' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+#start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}
+</style>
+<link rel='stylesheet' id='wc-blocks-vendors-style-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=5.7.2' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=5.7.2' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.7.1' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.7.1' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.7.1' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='xoo-wsc-fonts-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/side-cart-woocommerce/assets/css/xoo-wsc-fonts.css?ver=2.1' media='all' />
+<link rel='stylesheet' id='xoo-wsc-style-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/side-cart-woocommerce/assets/css/xoo-wsc-style.css?ver=2.1' media='all' />
+<style id='xoo-wsc-style-inline-css'>
+
+.xoo-wsc-sp-left-col img{
+	max-width: 80px;
+}
+
+.xoo-wsc-sp-right-col{
+	font-size: 14px;
+}
+
+.xoo-wsc-sp-container{
+	background-color: #eee;
+}
+
+
+ 
+
+.xoo-wsc-footer{
+	background-color: #ffffff;
+	color: #000000;
+	padding: 10px 20px;
+}
+
+.xoo-wsc-footer, .xoo-wsc-footer a, .xoo-wsc-footer .amount{
+	font-size: 18px;
+}
+
+.xoo-wsc-ft-buttons-cont{
+	grid-template-columns: auto;
+}
+
+.xoo-wsc-basket{
+	top: 10px;
+	right: 0px;
+	background-color: #ffffff;
+	color: #000000;
+	box-shadow: 0 1px 10px 0;
+	border-radius: 50%}
+
+.xoo-wsc-bki{
+	font-size: 25px}
+
+.xoo-wsc-items-count{
+	top: -12px;
+	left: -12px;
+}
+
+.xoo-wsc-items-count, .xoo-wsc-sc-count{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.xoo-wsc-container, .xoo-wsc-slider{
+	max-width: 320px;
+	right: -320px;
+	top: 0;bottom: 0;
+	top: 0;
+	font-family: }
+
+
+.xoo-wsc-cart-active .xoo-wsc-container, .xoo-wsc-slider-active .xoo-wsc-slider{
+	right: 0;
+}
+
+
+.xoo-wsc-cart-active .xoo-wsc-basket{
+	right: 320px;
+}
+
+.xoo-wsc-slider{
+	right: -320px;
+}
+
+span.xoo-wsch-close {
+    font-size: 16px;
+    right: 10px;
+}
+
+.xoo-wsch-top{
+	justify-content: center;
+}
+
+.xoo-wsch-text{
+	font-size: 20px;
+}
+
+.xoo-wsc-header{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.xoo-wsc-sb-bar > span{
+	background-color: #1e73be;
+}
+
+.xoo-wsc-body{
+	background-color: #ffffff;
+}
+
+.xoo-wsc-body, .xoo-wsc-body span.amount, .xoo-wsc-body a{
+	font-size: 16px;
+	color: #000000;
+}
+
+.xoo-wsc-product{
+	padding: 20px 15px;
+}
+
+.xoo-wsc-img-col{
+	width: 30%;
+}
+.xoo-wsc-sum-col{
+	width: 70%;
+}
+
+.xoo-wsc-sum-col{
+	justify-content: center;
+}
+
+/***** Quantity *****/
+
+.xoo-wsc-qty-box{
+	max-width: 75px;
+}
+
+.xoo-wsc-qty-box.xoo-wsc-qtb-square{
+	border-color: #000000;
+}
+
+input[type="number"].xoo-wsc-qty{
+	border-color: #000000;
+	background-color: #ffffff;
+	color: #000000;
+	height: 28px;
+	line-height: 28px;
+}
+
+input[type="number"].xoo-wsc-qty, .xoo-wsc-qtb-square{
+	border-width: 1px;
+	border-style: solid;
+}
+.xoo-wsc-chng{
+	background-color: #ffffff;
+	color: #000000;
+}
+</style>
+<link rel='stylesheet' id='slick-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woo-product-gallery-slider/assets/css/slick.css?ver=2.1.3' media='all' />
+<link rel='stylesheet' id='slick-theme-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woo-product-gallery-slider/assets/css/slick-theme.css?ver=2.1.3' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woo-product-gallery-slider/assets/css/jquery.fancybox.min.css?ver=2.1.3' media='all' />
+<style id='fancybox-inline-css'>
+
+                .wpgs-nav .slick-active img{opacity:.7;transition:all ease-in .3s}.wpgs-nav .slick-current img{opacity:1}
+                .wpgs-for .slick-arrow{position:absolute;z-index:1;cursor:pointer;top:50%;margin-top:-15px}
+                .wpgs .slick-disabled{display:none;}
+                .flaticon-right-arrow{right:0}
+                .wpgs-for .slick-arrow::before,.wpgs-nav .slick-prev::before, .wpgs-nav .slick-next::before{color:  !important;}
+                .fancybox-bg{background: #222 !important;}                        
+                
+</style>
+<link rel='stylesheet' id='flaticon-wpgs-css'  href='https://www.extremetuning.com.ua/wp-content/plugins/woo-product-gallery-slider/assets/css/font/flaticon.css?ver=2.1.3' media='all' />
+<script src='https://www.extremetuning.com.ua/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://www.extremetuning.com.ua/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://www.extremetuning.com.ua/wp-json/" /><link rel="alternate" type="application/json" href="https://www.extremetuning.com.ua/wp-json/wp/v2/pages/146" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.extremetuning.com.ua/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.extremetuning.com.ua/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8" />
+<meta name="generator" content="WooCommerce 5.7.1" />
+<link rel='shortlink' href='https://www.extremetuning.com.ua/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.extremetuning.com.ua/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.extremetuning.com.ua%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.extremetuning.com.ua/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.extremetuning.com.ua%2F&#038;format=xml" />
+        <script>
+          window.WCUS_APP_STATE = [];
+        </script>
+        	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+			<style id="inspiro-custom-header-styles" type="text/css">
+					.site-title a,
+			.colors-dark .site-title a,
+			.colors-custom .site-title a,
+			body.has-header-image .site-title a,
+			body.has-header-video .site-title a,
+			body.has-header-image.colors-dark .site-title a,
+			body.has-header-video.colors-dark .site-title a,
+			body.has-header-image.colors-custom .site-title a,
+			body.has-header-video.colors-custom .site-title a,
+			.site-description,
+			.colors-dark .site-description,
+			.colors-custom .site-description,
+			body.has-header-image .site-description,
+			body.has-header-video .site-description,
+			body.has-header-image.colors-dark .site-description,
+			body.has-header-video.colors-dark .site-description,
+			body.has-header-image.colors-custom .site-description,
+			body.has-header-video.colors-custom .site-description {
+				color: #;
+			}
+		
+					.custom-header-button {
+				color: #ffffff;
+				border-color: #ffffff;
+			}
+		
+					.custom-header-button:hover {
+				color: #ffffff;
+			}
+		
+					.custom-header-button:hover {
+				background-color: #0bb4aa;
+				border-color: #0bb4aa;
+			}
+				</style>
+		<link rel="icon" href="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/cropped-black_backgound-1-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/cropped-black_backgound-1-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/cropped-black_backgound-1-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/cropped-black_backgound-1-1-270x270.png" />
+	
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV6TCRW');</script>
+<!-- End Google Tag Manager -->
+	
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(83835796, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://mc.yandex.ru/watch/83835796" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="home page-template-default page page-id-146 wp-embed-responsive theme-inspiro woocommerce-no-js inspiro-front-page has-header-image inspiro--with-page-nav page-layout-full-width post-display-content-excerpt colors-light">
+
+<aside id="side-nav" class="side-nav" tabindex="-1">
+	<div class="side-nav__scrollable-container">
+		<div class="side-nav__wrap">
+			<div class="side-nav__close-button">
+				<button type="button" class="navbar-toggle">
+					<span class="screen-reader-text">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+							<nav class="mobile-menu-wrapper" aria-label="Mobile Menu" role="navigation">
+					<ul id="menu-%d0%bc%d0%b5%d0%bd%d1%8e" class="nav navbar-nav"><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a href="https://www.extremetuning.com.ua/about">О нас</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://www.extremetuning.com.ua/shop/">Магазин</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="https://www.extremetuning.com.ua/blog/">Блог</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://www.extremetuning.com.ua/my-account/">Мой Аккаунт</a></li>
+</ul>				</nav>
+						<div id="meta-3" class="widget widget_meta"><h3 class="title">EXTREME TUNING</h3>
+		<ul>
+			<li><a rel="nofollow" href="https://www.extremetuning.com.ua/wp-login.php?action=register">Регистрация</a></li>			<li><a rel="nofollow" href="https://www.extremetuning.com.ua/wp-login.php">Войти</a></li>
+			<li><a href="https://www.extremetuning.com.ua/feed/">Лента записей</a></li>
+			<li><a href="https://www.extremetuning.com.ua/comments/feed/">Лента комментариев</a></li>
+
+			<li><a href="https://ru.wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		<div class="clear"></div></div>		</div>
+	</div>
+</aside>
+<div class="side-nav-overlay"></div>
+
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV6TCRW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+		<div id="site-navigation" class="navbar">
+	<div class="header-inner inner-wrap">
+
+		<div class="header-logo-wrapper">
+			<a class="" href="https://www.extremetuning.com.ua/"><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/white_logo.png"></a>
+			<a href="https://www.extremetuning.com.ua" title="Тюнинг для экстремальных видов спорта" class="custom-logo-text">Extreme Tuning</a>		</div>
+
+		<div class="header-navigation-wrapper">
+							<nav class="primary-menu-wrapper navbar-collapse collapse" aria-label="Top Horizontal Menu" role="navigation">
+					<ul id="menu-%d0%bc%d0%b5%d0%bd%d1%8e-1" class="nav navbar-nav dropdown sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a href="https://www.extremetuning.com.ua/about">О нас</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://www.extremetuning.com.ua/shop/">Магазин</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="https://www.extremetuning.com.ua/blog/">Блог</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://www.extremetuning.com.ua/my-account/">Мой Аккаунт</a></li>
+</ul>				</nav>
+			
+			
+			<div id="sb-search" class="sb-search">
+				
+<form method="get" id="searchform" action="https://www.extremetuning.com.ua/">
+	<label for="search-form-input">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="sb-search-input" placeholder="Поиск..." name="s" id="search-form-input" autocomplete="off" />
+	</label>
+	<button class="sb-search-button-open" aria-expanded="false">
+		<span class="sb-icon-search">
+			<svg class="svg-icon svg-icon-search" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)" /></svg>		</span>
+	</button>
+	<button class="sb-search-button-close" aria-expanded="false">
+		<span class="sb-icon-search">
+			<svg class="svg-icon svg-icon-cross" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" /></svg>		</span>
+	</button>
+</form>
+			</div>
+
+							<button type="button" class="navbar-toggle">
+					<span class="screen-reader-text">Toggle sidebar &amp; navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+					</div>
+	</div><!-- .inner-wrap -->
+</div><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div class="custom-header">
+	<div class="site-branding">
+	<div class="inner-wrap">
+		
+		<div class="site-branding-text">
+			
+			
+							<h1 class="site-title"><a href="https://www.extremetuning.com.ua/shop/" target="_self">EXTREME TUNING</a></h1>
+			
+							<p class="site-description">Тюнинг для экстремальных видов спорта</p>
+					</div><!-- .site-branding-text -->
+
+		<div class="custom-header-button-wrapper">
+		<a class="custom-header-button button" href="https://www.extremetuning.com.ua/shop/" target="_self" rel="nofollow" style="display: inline-block;">
+		ПЕРЕЙТИ В МАГАЗИН	</a>
+</div><!-- .custom-header-button -->
+		<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/white_logo.png" class="mainBlockLogo lazy" alt="Extreme Tuning Logo">
+
+	</div><!-- .inner-wrap -->
+</div><!-- .site-branding -->
+
+	<div class="custom-header-media">
+		<div id="wp-custom-header" class="wp-custom-header"><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201922%201081'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain.png" width="1922" height="1081" alt="Extreme Tuning" data-srcset="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain.png 1922w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain-300x169.png 300w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain-1024x576.png 1024w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain-768x432.png 768w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain-1536x864.png 1536w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain-1800x1012.png 1800w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboard_mountain-600x337.png 600w" data-sizes="100vw" /></div>	</div>
+
+		<div id="scroll-to-content" title="Scroll down to content">
+		<span class="screen-reader-text">Scroll down to content</span>
+	</div>
+	</div><!-- .custom-header -->
+
+	<div class="site-content-contain">
+		<div id="content" class="site-content">
+
+
+		<main id="main" class="site-main" role="main">
+
+			
+<article id="post-146" class="post-146 page type-page status-publish hentry">
+
+	
+	<header class="entry-header">
+
+		<div class="inner-wrap"></div><!-- .inner-wrap -->
+	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		
+<div style="height:9px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div style="height:17px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-cover alignfull has-background-dim-60 has-black-background-color has-background-dim has-parallax is-position-center-center lazy" style="min-height:619px" data-bg="url(https://www.extremetuning.com.ua/wp-content/uploads/2021/08/snowboarding.jpg)"><div class="wp-block-cover__inner-container">
+<div style="height:39px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="has-text-align-center has-text-color" style="color:#fffffa;font-size:50px;line-height:1.1">Сноуборд и лыжные тюнинг аксессуары</p>
+
+
+
+<p class="has-text-align-center has-medium-font-size">Идеи и разработки, без которых вы больше не сможете обходиться на склоне.</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center">
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-white-color has-text-color no-border-radius" href="https://www.extremetuning.com.ua/shop/">Проверить</a></div>
+</div>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<div style="height:46px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div class="wc-block-grid wp-block-product-top-rated wc-block-product-top-rated has-3-columns"><ul class="wc-block-grid__products"><li class="wc-block-grid__product">
+				<a href="https://www.extremetuning.com.ua/product/%d1%84%d0%b8%d0%ba%d1%81%d0%b8%d1%80%d1%83%d1%8e%d1%89%d0%b8%d0%b5-%d0%bd%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b8-%d0%b1%d0%b0%d0%b1%d0%be%d1%87%d0%ba%d0%b8/" class="wc-block-grid__product-link">
+					<div class="wc-block-grid__product-image"><img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/fiksiruyuschiy-babochki-1-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazy" alt="Фиксирующие накладки “Бабочки”" loading="lazy" data-srcset="https://www.extremetuning.com.ua/wp-content/uploads/2021/08/fiksiruyuschiy-babochki-1-300x300.jpg 300w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/fiksiruyuschiy-babochki-1-150x150.jpg 150w, https://www.extremetuning.com.ua/wp-content/uploads/2021/08/fiksiruyuschiy-babochki-1-100x100.jpg 100w" data-sizes="100vw" /></div>
+					<div class="wc-block-grid__product-title">Фиксирующие Накладки “Бабочки” В Лыжные И Сноубордические Ботинки</div>
+				</a>
+				<div class="wc-block-grid__product-onsale">
+			<span aria-hidden="true">Распродажа</span>
+			<span class="screen-reader-text">Продаваемый товар</span>
+		</div>
+				<div class="wc-block-grid__product-price price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">269<span class="woocommerce-Price-currencySymbol">&#8372;</span></span></del> <ins><span class="woocommerce-Price-amount amount">219<span class="woocommerce-Price-currencySymbol">&#8372;</span></span></ins></div>
+				<div class="wc-block-grid__product-rating"><div class="star-rating" role="img" aria-label="Оценка 5.00 из 5"><span style="width:100%">Рейтинг <strong class="rating">5.00</strong> из 5 на основе опроса <span class="rating">2</span> пользователей</span></div></div>
+				<div class="wp-block-button wc-block-grid__product-add-to-cart"><a href="?add-to-cart=273" aria-label="Добавить &quot;Фиксирующие Накладки “Бабочки” В Лыжные И Сноубордические Ботинки&quot; в корзину" data-quantity="1" data-product_id="273" data-product_sku="4" rel="nofollow" class="wp-block-button__link add_to_cart_button ajax_add_to_cart">В корзину</a></div>
+			</li><li class="wc-block-grid__product">
+				<a href="https://www.extremetuning.com.ua/product/%d0%bf%d0%be%d0%b4%d0%bf%d1%8f%d1%82%d0%bd%d0%b8%d0%ba%d0%b8-%d0%b4%d0%bb%d1%8f-%d1%81%d0%bd%d0%be%d1%83%d0%b1%d0%be%d1%80%d0%b4%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d1%85-%d0%b8-%d0%bb%d1%8b%d0%b6/" class="wc-block-grid__product-link">
+					<div class="wc-block-grid__product-image"><img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/uploads/2021/06/podpyatnik-1-scaled-e1628925007314-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazy" alt="Подпятники для сноубордических ботинок" loading="lazy" data-srcset="https://www.extremetuning.com.ua/wp-content/uploads/2021/06/podpyatnik-1-scaled-e1628925007314-300x300.jpg 300w, https://www.extremetuning.com.ua/wp-content/uploads/2021/06/podpyatnik-1-scaled-e1628925007314-150x150.jpg 150w, https://www.extremetuning.com.ua/wp-content/uploads/2021/06/podpyatnik-1-scaled-e1628925007314-100x100.jpg 100w" data-sizes="100vw" /></div>
+					<div class="wc-block-grid__product-title">Подпятники Для Сноубордических / Лыжных Ботинок</div>
+				</a>
+				<div class="wc-block-grid__product-onsale">
+			<span aria-hidden="true">Распродажа</span>
+			<span class="screen-reader-text">Продаваемый товар</span>
+		</div>
+				<div class="wc-block-grid__product-price price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">399<span class="woocommerce-Price-currencySymbol">&#8372;</span></span></del> <ins><span class="woocommerce-Price-amount amount">299<span class="woocommerce-Price-currencySymbol">&#8372;</span></span></ins></div>
+				<div class="wc-block-grid__product-rating"><div class="star-rating" role="img" aria-label="Оценка 5.00 из 5"><span style="width:100%">Рейтинг <strong class="rating">5.00</strong> из 5 на основе опроса <span class="rating">3</span> пользователей</span></div></div>
+				<div class="wp-block-button wc-block-grid__product-add-to-cart"><a href="https://www.extremetuning.com.ua/product/%d0%bf%d0%be%d0%b4%d0%bf%d1%8f%d1%82%d0%bd%d0%b8%d0%ba%d0%b8-%d0%b4%d0%bb%d1%8f-%d1%81%d0%bd%d0%be%d1%83%d0%b1%d0%be%d1%80%d0%b4%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d1%85-%d0%b8-%d0%bb%d1%8b%d0%b6/" aria-label="Выбрать опции для &quot;Подпятники Для Сноубордических / Лыжных Ботинок&quot;" data-quantity="1" data-product_id="28" data-product_sku="1" rel="nofollow" class="wp-block-button__link add_to_cart_button">Выбрать &#8230;</a></div>
+			</li><li class="wc-block-grid__product">
+				<a href="https://www.extremetuning.com.ua/product/%d1%81%d1%82%d0%b8%d0%ba%d0%b5%d1%80%d1%8b-snowboard-riders/" class="wc-block-grid__product-link">
+					<div class="wc-block-grid__product-image"><img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/uploads/2021/10/IMG_20211013_103112-01-300x300.jpeg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail lazy" alt="Стикеры" loading="lazy" data-srcset="https://www.extremetuning.com.ua/wp-content/uploads/2021/10/IMG_20211013_103112-01-300x300.jpeg 300w, https://www.extremetuning.com.ua/wp-content/uploads/2021/10/IMG_20211013_103112-01-150x150.jpeg 150w, https://www.extremetuning.com.ua/wp-content/uploads/2021/10/IMG_20211013_103112-01-100x100.jpeg 100w" data-sizes="100vw" /></div>
+					<div class="wc-block-grid__product-title">Стикеры &#8220;Snowboard/Ski II&#8221;</div>
+				</a>
+				<div class="wc-block-grid__product-onsale">
+			<span aria-hidden="true">Распродажа</span>
+			<span class="screen-reader-text">Продаваемый товар</span>
+		</div>
+				<div class="wc-block-grid__product-price price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">189<span class="woocommerce-Price-currencySymbol">&#8372;</span></span></del> <ins><span class="woocommerce-Price-amount amount">149<span class="woocommerce-Price-currencySymbol">&#8372;</span></span></ins></div>
+				<div class="wc-block-grid__product-rating"><div class="star-rating" role="img" aria-label="Оценка 5.00 из 5"><span style="width:100%">Рейтинг <strong class="rating">5.00</strong> из 5 на основе опроса <span class="rating">1</span> пользователя</span></div></div>
+				<div class="wp-block-button wc-block-grid__product-add-to-cart"><a href="?add-to-cart=408" aria-label="Добавить &quot;Стикеры &quot;Snowboard/Ski II&quot;&quot; в корзину" data-quantity="1" data-product_id="408" data-product_sku="11" rel="nofollow" class="wp-block-button__link add_to_cart_button ajax_add_to_cart">В корзину</a></div>
+			</li></ul></div>
+
+
+<div style="height:46px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-buttons is-content-justification-center"></div>
+
+
+
+<div class="wp-block-cover alignfull has-background-dim-70 has-black-background-color has-background-dim has-parallax is-position-center-center lazy" style="min-height:681px" data-bg="url(https://www.extremetuning.com.ua/wp-content/uploads/2021/10/IMG_20211013_105727-01-scaled.jpeg)"><div class="wp-block-cover__inner-container">
+<div style="height:39px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="has-text-align-center has-text-color" style="color:#fffffa;font-size:50px;line-height:1.1">Крутые наклейки и стикеры</p>
+
+
+
+<p class="has-text-align-center has-medium-font-size">Красочные износостойкие, водонепроницаемые стикеры и наклейки, придадут тебе индивидуальный стиль на склоне и украсят твои сноуборд, лыжи и шлем!</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center">
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-white-color has-text-color no-border-radius" href="https://www.extremetuning.com.ua/shop/">Проверить</a></div>
+</div>
+</div></div>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+</article><!-- #post-146 -->
+
+		</main><!-- #main -->
+
+
+
+		</div><!-- #content -->
+
+		
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="inner-wrap">
+				
+<div class="site-info preFooter">
+    <div class="infoFooter">
+		<ul>
+			<li class="firstLi">Информация</li>
+			<li><a href="https://www.extremetuning.com.ua/about/">О нас</a></li>
+			<li><a href="https://www.extremetuning.com.ua/shop/">Магазин</a></li>
+			<li><a href="https://www.extremetuning.com.ua/blog">Блог</a></li>
+			<li><a href="https://www.extremetuning.com.ua/optovikam/">Оптовым покупателям</a></li>
+			<li><a href="https://www.extremetuning.com.ua/oplata-i-dostavka/">Оплата и доставка</a></li>
+			<li><a href="https://www.extremetuning.com.ua/obmen-i-vozvrat/">Обмен и возврат</a></li>
+			<li><a href="https://www.extremetuning.com.ua/oferta/">Договор публичной оферты</a></li>
+			<!--<li><a href="https://www.extremetuning.com.ua/vacancies">Вакансии</a></li>-->
+		</ul>
+    </div>
+	<div class="helpFooter">
+		<ul>
+			<li class="firstLi">Помощь и поддержка</li>
+			<li><a href="https://www.extremetuning.com.ua/contact/">Связаться</a></li>
+			<li>
+			    <a href="https://telegram.im/@extreme_tuning"><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/telegram.png"></a>
+			    <a href="viber://chat?number=%2B380976021028"><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/viber.png"></a>
+			</li>
+			<li class="phoneNumber">
+			    <a href="tel:+380976021028"><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/call.png">+38097 602 10 28</a>
+			</li>
+			<li class="phoneNumber"><a href="tel:+380955944927"><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/call.png">+38095 594 49 27</a></li>
+			<li class="emailFooter"><a href="mailto:info@extremetuning.com.ua">info@extremetuning.com.ua</a></li>
+		</ul>
+	</div>
+	<div class="socialLinksFooter">
+		<ul>
+		  <li>
+			<a href="https://www.instagram.com/extuning/">
+			  <img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/instagram.png" alt="instagram">
+			</a>
+		  </li>
+		  <li>
+			<a href="https://www.facebook.com/ext.tuning/">
+			  <img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/facebook.png" alt="facebook">
+			</a>
+		  </li>
+		  <li>
+			<a href="https://www.youtube.com/channel/UCri3lj2yscsgrfPk37DsWVQ">
+			  <img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/youtube.png" alt="youtube">
+			</a>
+		  </li>
+		  <li>
+			<a href="https://www.pinterest.ru/extreme_tuning/">
+			  <img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/pinterest.png" alt="pinterest">
+			</a>
+		  </li>
+		  <li>
+			<a href="https://twitter.com/ExtremeTuning3">
+			  <img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/twitter.png" alt="twitter">
+			</a>
+		  </li>
+		</ul>
+		<a class="logoFooterHome" href="https://www.extremetuning.com.ua/"><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/images/white_logo.png"></a>
+		
+	</div>
+</div>
+
+<div class="site-info">
+		<span class="copyright">
+		<span>
+			<p>
+				© «Extreme Tuning™»2019–2021 			</p>
+		</span>
+		<span>
+			Разработано в <a href="https://www.gct.company/" target="_blank" rel="nofollow">GCT.company</a>
+		</span>
+	</span>
+</div><!-- .site-info -->
+			</div><!-- .inner-wrap -->
+		</footer><!-- #colophon -->
+	</div><!-- .site-content-contain -->
+</div><!-- #page -->
+
+<div class="xoo-wsc-modal">
+
+	
+<div class="xoo-wsc-container">
+
+	<div class="xoo-wsc-basket">
+
+					<span class="xoo-wsc-items-count">0</span>
+		
+		<span class="xoo-wsc-bki xoo-wsc-icon-basket1"></span>
+
+		
+	</div>
+
+	<div class="xoo-wsc-header">
+
+		
+		
+<div class="xoo-wsch-top">
+
+			<div class="xoo-wsc-notice-container" data-section="cart"><ul class="xoo-wsc-notices"></ul></div>	
+			<div class="xoo-wsch-basket">
+			<span class="xoo-wscb-icon xoo-wsc-icon-bag2"></span>
+			<span class="xoo-wscb-count">0</span>
+		</div>
+	
+			<span class="xoo-wsch-text">Ваша корзина</span>
+	
+			<span class="xoo-wsch-close xoo-wsc-icon-cross"></span>
+	
+</div>
+		
+	</div>
+
+
+	<div class="xoo-wsc-body">
+
+		
+		
+<div class="xoo-wsc-empty-cart"><span>Ваша корзина пуста</span><a class="button btn" href="https://www.extremetuning.com.ua/shop/">Вернутся в магазин</a></div>
+		
+	</div>
+
+	<div class="xoo-wsc-footer">
+
+		
+		
+
+
+
+<div class="xoo-wsc-ft-buttons-cont">
+
+	<a href="https://www.extremetuning.com.ua/shop/" class="xoo-wsc-ft-btn button btn xoo-wsc-ft-btn-continue">Продолжить покупки</a>
+</div>
+
+
+		
+	</div>
+
+	<span class="xoo-wsc-loader"></span>
+
+</div>
+	<span class="xoo-wsc-opac">
+
+</div>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script src='https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/js/minified/plugins.min.js?ver=1.3.4' id='inspiro-lite-js-plugins-js'></script>
+<script src='https://www.extremetuning.com.ua/wp-content/themes/inspiro/assets/js/minified/scripts.min.js?ver=1.3.4' id='inspiro-lite-script-js'></script>
+<script id='woo_justin_router_js-js-extra'>
+var woo_justin_globals = {"ajaxUrl":"https:\/\/www.extremetuning.com.ua\/wp-admin\/admin-ajax.php","homeUrl":"https:\/\/www.extremetuning.com.ua","lang":"ru","disableDefaultBillingFields":"true","i10n":{"placeholder_area":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","placeholder_city":"\u041e\u0431\u0435\u0440\u0456\u0442\u044c \u043c\u0456\u0441\u0442\u043e","placeholder_warehouse":"\u041e\u0431\u0435\u0440\u0456\u0442\u044c \u0432\u0456\u0434\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043d\u044f"}};
+</script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/justin/assets/js/ajax-router.js?ver=1634028377' id='woo_justin_router_js-js'></script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.5.7.1' id='jquery-blockui-js'></script>
+<script id='wc-add-to-cart-js-extra'>
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 \u043a\u043e\u0440\u0437\u0438\u043d\u044b","cart_url":"https:\/\/www.extremetuning.com.ua\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.7.1' id='wc-add-to-cart-js'></script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.5.7.1' id='js-cookie-js'></script>
+<script id='woocommerce-js-extra'>
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.7.1' id='woocommerce-js'></script>
+<script id='wc-cart-fragments-js-extra'>
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_faa2116500f138c74c792e6ca13dec88","fragment_name":"wc_fragments_faa2116500f138c74c792e6ca13dec88","request_timeout":"5000"};
+</script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.7.1' id='wc-cart-fragments-js'></script>
+<script id='xoo-wsc-main-js-js-extra'>
+var xoo_wsc_params = {"adminurl":"https:\/\/www.extremetuning.com.ua\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","qtyUpdateDelay":"500","notificationTime":"5000","html":{"successNotice":"<ul class=\"xoo-wsc-notices\"><li class=\"xoo-wsc-notice-success\"><span class=\"xoo-wsc-icon-check_circle\"><\/span>%s%<\/li><\/ul>","errorNotice":"<ul class=\"xoo-wsc-notices\"><li class=\"xoo-wsc-notice-error\"><span class=\"xoo-wsc-icon-cross\"><\/span>%s%<\/li><\/ul>"},"strings":{"maxQtyError":"Only %s% in stock","stepQtyError":"Quantity can only be purchased in multiple of %s%","calculateCheckout":"Please use checkout form to calculate shipping","couponEmpty":"Please enter promo code"},"isCheckout":"","isCart":"","sliderAutoClose":"1","shippingEnabled":"1","couponsEnabled":"1","autoOpenCart":"yes","addedToCart":"","ajaxAddToCart":"yes","showBasket":"always_show","flyToCart":"no","productFlyClass":"","refreshCart":"no","fetchDelay":"200"};
+</script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/side-cart-woocommerce/assets/js/xoo-wsc-main.js?ver=2.1' id='xoo-wsc-main-js-js'></script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woo-product-gallery-slider/assets/js/slick.min.js?ver=2.1.3' id='slick-js'></script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woo-product-gallery-slider/assets/js/jquery.fancybox.min.js?ver=2.1.3' id='fancybox-js'></script>
+<script src='https://www.extremetuning.com.ua/wp-content/plugins/woo-product-gallery-slider/assets/js/wpgs.js?ver=2.1.3' id='wpgsjs-js'></script>
+<script id='wpgsjs-js-after'>
+jQuery(document).ready(function(){
+        jQuery('.wpgs-for').slick({
+            slidesToShow:1,
+            slidesToScroll:1,
+            arrows:true,
+            fade:false,
+            rtl: false,
+            infinite:false,
+            adaptiveHeight:true,
+            autoplay:false,
+            draggable:false,
+           nextArrow:'<i class="flaticon-right-arrow"></i>', 
+            prevArrow:'<i class="flaticon-back"></i>',       
+            asNavFor:'.wpgs-nav',
+          
+        });
+        jQuery('.wpgs-nav').slick({
+            slidesToShow:4,
+            slidesToScroll:1,
+            asNavFor:'.wpgs-for',
+            arrows:true,
+            rtl: false,
+            infinite:false,
+            focusOnSelect:true,
+            responsive:[{
+                breakpoint:767,
+                settings:{
+                    slidesToShow:3,
+                    slidesToScroll:1,
+                    draggable:true,
+                    autoplay:false,
+                    arrows:true
+                }
+            }],
+        });
+
+        
+        
+
+      });
+</script>
+<script src='https://www.extremetuning.com.ua/wp-includes/js/wp-embed.min.js?ver=5.8' id='wp-embed-js'></script>
+    <script src="//code.jivosite.com/widget/6LUaYJor3x" async></script>
+
+<script>window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="https://www.extremetuning.com.ua/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"></script></body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+Lazy Loading
+
+Served from: www.extremetuning.com.ua @ 2021-11-21 16:02:40 by W3 Total Cache
+-->

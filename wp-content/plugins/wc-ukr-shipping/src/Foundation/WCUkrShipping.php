@@ -2,7 +2,7 @@
 
 namespace kirillbdev\WCUkrShipping\Foundation;
 
-use kirillbdev\WCUkrShipping\Modules\Frontend\Address;
+use kirillbdev\WCUSCore\Foundation\Container;
 use kirillbdev\WCUSCore\Foundation\Kernel;
 
 if ( ! defined('ABSPATH')) {
@@ -23,6 +23,11 @@ final class WCUkrShipping extends Kernel
         }
 
         return self::$instance;
+    }
+
+    public function getContainer(): Container
+    {
+        return $this->container;
     }
 
     public function modules()

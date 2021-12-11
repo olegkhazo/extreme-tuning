@@ -182,7 +182,7 @@ function inspiro_excerpt_more( $link ) {
 		'<p class="link-more"><a href="%1$s" class="more-link">%2$s</a></p>',
 		esc_url( get_permalink( get_the_ID() ) ),
 		/* translators: %s: Post title. */
-		sprintf( __( 'Read more<span class="screen-reader-text"> "%s"</span>', 'inspiro' ), get_the_title( get_the_ID() ) )
+		sprintf( __( 'Читать<span class="screen-reader-text"> "%s"</span>', 'inspiro' ), get_the_title( get_the_ID() ) )
 	);
 	return ' &hellip; ' . $link;
 }

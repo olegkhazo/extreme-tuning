@@ -1706,6 +1706,12 @@ function get_comment_reply_link( $args = array(), $comment = null, $post = null 
 		return false;
 	}
 
+	if ( get_option( 'page_comments' ) ) {
+		$permalink = str_replace( '#comment-' . $comment->comment_ID, '', get_comment_link( $comment ) );
+	} else {
+		$permalink = get_permalink( $post->ID );
+	}
+
 	/**
 	 * Filters the comment reply link arguments.
 	 *
@@ -1750,7 +1756,7 @@ function get_comment_reply_link( $args = array(), $comment = null, $post = null 
 						'unapproved'      => false,
 						'moderation-hash' => false,
 					),
-					get_permalink( $post->ID )
+					$permalink
 				)
 			) . '#' . $args['respond_id'],
 			$data_attribute_string,
@@ -1815,7 +1821,7 @@ function get_post_reply_link( $args = array(), $post = null ) {
 	$defaults = array(
 		'add_below'  => 'post',
 		'respond_id' => 'respond',
-		'reply_text' => __( 'Leave a Comment' ),
+		'reply_text' => __( 'Оставить комментарий' ),
 		'login_text' => __( 'Log in to leave a Comment' ),
 		'before'     => '',
 		'after'      => '',
@@ -2353,7 +2359,7 @@ function comment_form( $args = array(), $post_id = null ) {
 			'<p class="comment-form-author">%s %s</p>',
 			sprintf(
 				'<label for="author">%s%s</label>',
-				__( 'Name' ),
+				__( 'Имя' ),
 				( $req ? ' <span class="required">*</span>' : '' )
 			),
 			sprintf(
@@ -2401,7 +2407,7 @@ function comment_form( $args = array(), $post_id = null ) {
 			),
 			sprintf(
 				'<label for="wp-comment-cookies-consent">%s</label>',
-				__( 'Save my name, email, and website in this browser for the next time I comment.' )
+				__( 'Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.' )
 			)
 		);
 
@@ -2449,7 +2455,7 @@ function comment_form( $args = array(), $post_id = null ) {
 			'<p class="logged-in-as">%s</p>',
 			sprintf(
 				/* translators: 1: Edit user link, 2: Accessibility text, 3: User name, 4: Logout URL. */
-				__( '<a href="%1$s" aria-label="%2$s">Logged in as %3$s</a>. <a href="%4$s">Log out?</a>' ),
+				__( '<a href="%1$s" aria-label="%2$s">Вы вошли как %3$s</a>. <a href="%4$s">Выйти?</a>' ),
 				get_edit_user_link(),
 				/* translators: %s: User name. */
 				esc_attr( sprintf( __( 'Logged in as %s. Edit your profile.' ), $user_identity ) ),
@@ -2474,7 +2480,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'class_form'           => 'comment-form',
 		'class_submit'         => 'submit',
 		'name_submit'          => 'submit',
-		'title_reply'          => __( 'Leave a Reply' ),
+		'title_reply'          => __( 'Отправить комментарий' ),
 		/* translators: %s: Author of the comment being replied to. */
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),
 		'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title">',
@@ -2482,7 +2488,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'cancel_reply_before'  => ' <small>',
 		'cancel_reply_after'   => '</small>',
 		'cancel_reply_link'    => __( 'Cancel reply' ),
-		'label_submit'         => __( 'Post Comment' ),
+		'label_submit'         => __( 'Отправить комментарий' ),
 		'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" />',
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',

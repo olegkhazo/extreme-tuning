@@ -100,7 +100,7 @@ class TranslateService
     }
 
     /**
-     * @param string $city
+     * @param array $city
      *
      * @return string
      */
@@ -112,7 +112,7 @@ class TranslateService
     }
 
     /**
-     * @param string $city
+     * @param array $warehouse
      *
      * @return string
      */

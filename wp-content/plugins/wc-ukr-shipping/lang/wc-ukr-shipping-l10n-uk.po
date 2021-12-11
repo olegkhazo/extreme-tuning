@@ -133,6 +133,9 @@ msgstr "Інформація про відділення Нової Пошти"
 msgid "options_btn_warehouse_update"
 msgstr "Оновити відділення"
 
+msgid "options_label_save_customer_address"
+msgstr "Зберігати останнє обране відділення користувача"
+
 msgid "save_options_success"
 msgstr "Налаштування успішно збережені"
 

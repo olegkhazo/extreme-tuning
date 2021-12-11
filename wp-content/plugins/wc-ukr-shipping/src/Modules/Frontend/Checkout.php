@@ -2,8 +2,10 @@
 
 namespace kirillbdev\WCUkrShipping\Modules\Frontend;
 
+use kirillbdev\WCUkrShipping\Foundation\State;
 use kirillbdev\WCUkrShipping\Services\Checkout\CheckoutService;
 use kirillbdev\WCUkrShipping\Services\Checkout\LegacyCheckoutService;
+use kirillbdev\WCUkrShipping\States\CheckoutState;
 use kirillbdev\WCUSCore\Contracts\ModuleInterface;
 
 if ( ! defined('ABSPATH')) {
@@ -36,6 +38,7 @@ class Checkout implements ModuleInterface
         add_filter('woocommerce_cart_shipping_method_full_label', [$this, 'wrapShippingCost'], 10, 2);
         add_filter('woocommerce_cart_totals_order_total_html', [$this, 'wrapOrderTotal']);
         add_action( 'woocommerce_after_shipping_rate', [ $this, 'injectShippingName' ], 10, 2);
+        add_action('wcus_state_init', [ $this, 'initCheckoutState' ]);
     }
 
     public function injectBillingFields()
@@ -66,6 +69,13 @@ class Checkout implements ModuleInterface
     {
         if ($method->get_method_id() === WC_UKR_SHIPPING_NP_SHIPPING_NAME) {
             echo '<input id="wcus-shipping-name" type="hidden" value="' . esc_attr($method->get_label()) . '">';
+        }
+    }
+
+    public function initCheckoutState()
+    {
+        if (wc_ukr_shipping_is_checkout()) {
+            State::add('checkout', CheckoutState::class);
         }
     }
 

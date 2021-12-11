@@ -2,7 +2,9 @@
 
 namespace kirillbdev\WCUkrShipping\Modules\Backend;
 
+use kirillbdev\WCUkrShipping\Foundation\State;
 use kirillbdev\WCUkrShipping\Services\TranslateService;
+use kirillbdev\WCUkrShipping\Traits\StateInitiatorTrait;
 use kirillbdev\WCUSCore\Contracts\ModuleInterface;
 
 if ( ! defined('ABSPATH')) {
@@ -11,6 +13,8 @@ if ( ! defined('ABSPATH')) {
 
 class AssetsLoader implements ModuleInterface
 {
+    use StateInitiatorTrait;
+
     private $translateService;
 
     public function __construct(TranslateService $translateService)
@@ -21,6 +25,7 @@ class AssetsLoader implements ModuleInterface
     public function init()
     {
         add_action('admin_enqueue_scripts', [$this, 'loadAdminAssets']);
+        add_action('admin_head', [ $this, 'initState' ]);
     }
 
     public function loadAdminAssets()

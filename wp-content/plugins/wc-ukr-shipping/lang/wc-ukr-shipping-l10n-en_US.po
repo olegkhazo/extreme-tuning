@@ -131,6 +131,9 @@ msgstr "Nova Poshta branches info"
 msgid "options_btn_warehouse_update"
 msgstr "Update branches"
 
+msgid "options_label_save_customer_address"
+msgstr "Save last selected user warehouse"
+
 msgid "save_options_success"
 msgstr "Settings saved successfully"
 

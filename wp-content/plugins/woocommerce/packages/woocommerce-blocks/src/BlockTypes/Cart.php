@@ -28,7 +28,7 @@ class Cart extends AbstractBlock {
 		$script = [
 			'handle'       => 'wc-' . $this->block_name . '-block',
 			'path'         => $this->asset_api->get_block_asset_build_path( $this->block_name ),
-			'dependencies' => [ 'wc-vendors', 'wc-blocks' ],
+			'dependencies' => [ 'wc-blocks' ],
 		];
 		return $key ? $script[ $key ] : $script;
 	}
@@ -120,6 +120,7 @@ class Cart extends AbstractBlock {
 		);
 		$this->asset_data_registry->add( 'baseLocation', wc_get_base_location(), true );
 		$this->asset_data_registry->add( 'isShippingCalculatorEnabled', filter_var( get_option( 'woocommerce_enable_shipping_calc' ), FILTER_VALIDATE_BOOLEAN ), true );
+		$this->asset_data_registry->add( 'displayItemizedTaxes', 'itemized' === get_option( 'woocommerce_tax_total_display' ), true );
 		$this->asset_data_registry->add( 'displayCartPricesIncludingTax', 'incl' === get_option( 'woocommerce_tax_display_cart' ), true );
 		$this->asset_data_registry->add( 'taxesEnabled', wc_tax_enabled(), true );
 		$this->asset_data_registry->add( 'couponsEnabled', wc_coupons_enabled(), true );
@@ -169,7 +170,7 @@ class Cart extends AbstractBlock {
 		return '
 			<div class="wc-block-skeleton wc-block-components-sidebar-layout wc-block-cart wc-block-cart--is-loading wc-block-cart--skeleton hidden" aria-hidden="true">
 				<div class="wc-block-components-main wc-block-cart__main">
-					<h2><span></span></h2>
+					<h2 class="wc-block-components-title"><span></span></h2>
 					<table class="wc-block-cart-items">
 						<thead>
 							<tr class="wc-block-cart-items__header">

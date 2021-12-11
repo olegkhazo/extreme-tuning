@@ -13,6 +13,7 @@
 	<div class="header-inner inner-wrap">
 
 		<div class="header-logo-wrapper">
+			<a class="" href="https://www.extremetuning.com.ua/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/white_logo.png"></a>
 			<?php inspiro_custom_logo(); ?>
 		</div>
 

@@ -468,8 +468,8 @@ function wpforms_html_attributes( $id = '', $class = array(), $datas = array(), 
 
 	if ( ! empty( $atts ) ) {
 		foreach ( $atts as $att => $val ) {
-			if ( '0' == $val || ! empty( $val ) ) {
-				if ( '[' === $att[0] ) {
+			if ( '0' === (string) $val || ! empty( $val ) ) {
+				if ( $att[0] === '[' ) {
 					// Handle special case for bound attributes in AMP.
 					$escaped_att = '[' . sanitize_html_class( trim( $att, '[]' ) ) . ']';
 				} else {
@@ -607,33 +607,34 @@ function wpforms_get_form_fields( $form = false, $whitelist = array() ) {
 	}
 
 	// White list of field types to allow.
-	$allowed_form_fields = array(
+	$allowed_form_fields = [
+		'address',
+		'checkbox',
+		'date-time',
+		'email',
+		'file-upload',
+		'gdpr-checkbox',
+		'hidden',
+		'likert_scale',
+		'name',
+		'net_promoter_score',
+		'number',
+		'number-slider',
+		'payment-checkbox',
+		'payment-multiple',
+		'payment-select',
+		'payment-single',
+		'payment-total',
+		'phone',
+		'radio',
+		'rating',
+		'richtext',
+		'select',
+		'signature',
 		'text',
 		'textarea',
-		'number-slider',
-		'select',
-		'radio',
-		'checkbox',
-		'gdpr-checkbox',
-		'email',
-		'address',
 		'url',
-		'name',
-		'hidden',
-		'date-time',
-		'phone',
-		'number',
-		'file-upload',
-		'rating',
-		'likert_scale',
-		'signature',
-		'payment-single',
-		'payment-multiple',
-		'payment-checkbox',
-		'payment-select',
-		'payment-total',
-		'net_promoter_score',
-	);
+	];
 	$allowed_form_fields = apply_filters( 'wpforms_get_form_fields_allowed', $allowed_form_fields );
 
 	if ( ! is_array( $form ) || empty( $form['fields'] ) ) {
@@ -662,23 +663,24 @@ function wpforms_get_form_fields( $form = false, $whitelist = array() ) {
  */
 function wpforms_get_conditional_logic_form_fields_supported() {
 
-	$fields_supported = array(
+	$fields_supported = [
+		'checkbox',
+		'email',
+		'hidden',
+		'net_promoter_score',
+		'number',
+		'number-slider',
+		'payment-checkbox',
+		'payment-multiple',
+		'payment-select',
+		'radio',
+		'rating',
+		'richtext',
+		'select',
 		'text',
 		'textarea',
-		'number-slider',
-		'select',
-		'radio',
-		'email',
 		'url',
-		'checkbox',
-		'number',
-		'payment-multiple',
-		'payment-checkbox',
-		'payment-select',
-		'hidden',
-		'rating',
-		'net_promoter_score',
-	);
+	];
 
 	return apply_filters( 'wpforms_get_conditional_logic_form_fields_supported', $fields_supported );
 }
@@ -1250,6 +1252,121 @@ function wpforms_sanitize_text_deeply( $string, $keep_newlines = false ) {
 }
 
 /**
+ * Sanitize an HTML string with a set of allowed HTML tags.
+ *
+ * @since 1.7.0
+ *
+ * @param string $value String to sanitize.
+ *
+ * @return string Sanitized string.
+ */
+function wpforms_sanitize_richtext_field( $value ) {
+
+	$count = 1;
+	$value = convert_invalid_entities( $value );
+
+	// Remove 'script' and 'style' tags recursively.
+	while ( $count ) {
+		$value = preg_replace( '@<(script|style)[^>]*?>.*?</\\1>@si', '', $value, - 1, $count );
+	}
+
+	// Make sure we have allowed tags only.
+	$value = wp_kses( $value, wpforms_get_allowed_html_tags_for_richtext_field() );
+
+	// Make sure that all tags are balanced.
+	return force_balance_tags( $value );
+}
+
+/**
+ * Escaping for Rich Text field values.
+ *
+ * @since 1.7.0
+ *
+ * @param string $value Text to escape.
+ *
+ * @return string Escaped text.
+ */
+function wpforms_esc_richtext_field( $value ) {
+
+	return wpautop( wpforms_sanitize_richtext_field( $value ) );
+}
+
+/**
+ * Retrieve allowed HTML tags for Rich Text field.
+ *
+ * @since 1.7.0
+ *
+ * @return array Array of allowed tags.
+ */
+function wpforms_get_allowed_html_tags_for_richtext_field() {
+
+	$allowed_tags = array_fill_keys(
+		[
+			'img',
+			'h1',
+			'h2',
+			'h3',
+			'h4',
+			'h5',
+			'h6',
+			'p',
+			'a',
+			'ul',
+			'ol',
+			'li',
+			'dl',
+			'dt',
+			'dd',
+			'hr',
+			'br',
+			'code',
+			'pre',
+			'strong',
+			'b',
+			'em',
+			'i',
+			'blockquote',
+			'cite',
+			'q',
+			'del',
+			'span',
+			'small',
+			'table',
+			'th',
+			'tr',
+			'td',
+			'abbr',
+			'address',
+			'sub',
+			'sup',
+			'ins',
+			'figure',
+			'figcaption',
+			'div',
+		],
+		array_fill_keys(
+			[ 'align', 'class', 'id', 'style', 'src', 'rel', 'href', 'target', 'width', 'height', 'title', 'cite', 'start', 'reversed', 'datetime' ],
+			[]
+		)
+	);
+
+	/**
+	 * Allowed HTML tags for Rich Text field.
+	 *
+	 * @since 1.7.0
+	 *
+	 * @param array $allowed_tags Allowed HTML tags.
+	 */
+	$tags = (array) apply_filters( 'wpforms_get_allowed_html_tags_for_richtext_field', $allowed_tags );
+
+	// Force unset iframes, script and style no matter when we get back
+	// from apply_filters, as they are a huge security risk.
+	unset( $tags['iframe'], $tags['script'], $tags['style'] );
+
+	return $tags;
+}
+
+/**
  * Sanitize an array, that consists of values as strings.
  * After that - merge all array values into multiline string.
  *
@@ -1652,6 +1769,16 @@ function wpforms_debug() {
  */
 function wpforms_debug_data( $data, $echo = true ) {
 
+	/**
+	 * Allow developers to determine whether the debug data should be displayed.
+	 * Works only in debug mode (`WPFORMS_DEBUG` constant is `true`).
+	 *
+	 * @since 1.6.8
+	 *
+	 * @param bool $allow_display True by default.
+	 */
+	$allow_display = apply_filters( 'wpforms_debug_data_allow_display', true );
+
 	if ( wpforms_debug() ) {
 
 		$output = '<div><textarea style="background:#fff;margin: 20px 0;width:100%;height:500px;font-size:12px;font-family: Consolas,Monaco,monospace;direction: ltr;unicode-bidi: embed;line-height: 1.4;padding: 4px 6px 1px;" readonly>';
@@ -1666,8 +1793,8 @@ function wpforms_debug_data( $data, $echo = true ) {
 
 		$output .= '</textarea></div>';
 
-		if ( $echo ) {
-			echo $output; // phpcs:ignore
+		if ( $echo && $allow_display ) {
+			echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		} else {
 			return $output;
 		}
@@ -2090,7 +2217,7 @@ function wpforms_get_providers_available() {
  */
 function wpforms_get_providers_options( $provider = '' ) {
 
-	$options  = get_option( 'wpforms_providers', array() );
+	$options  = get_option( 'wpforms_providers', [] );
 	$provider = sanitize_key( $provider );
 	$data     = $options;
 
@@ -2503,6 +2630,9 @@ function wpforms_count_words( $string ) {
 /**
  * Get WPForms upload root path (e.g. /wp-content/uploads/wpforms).
  *
+ * As of 1.7.0, you can pass in your own value that matches the output of wp_upload_dir()
+ * in order to use this function inside of a filter without infinite looping.
+ *
  * @since 1.6.1
  *
  * @return array WPForms upload root path (no trailing slash).
@@ -2818,4 +2948,24 @@ function wpforms_get_timezone() {
 	}
 
 	return timezone_open( $timezone_string );
+}
+
+/**
+ * Alias for default readonly function.
+ *
+ * @since 1.6.9
+ *
+ * @param mixed $readonly One of the values to compare.
+ * @param mixed $current  The other value to compare if not just true.
+ * @param bool  $echo     Whether to echo or just return the string.
+ *
+ * @return string HTML attribute or empty string.
+ */
+function wpforms_readonly( $readonly, $current = true, $echo = true ) {
+
+	if ( function_exists( 'wp_readonly' ) ) {
+		return wp_readonly( $readonly, $current, $echo );
+	}
+
+	return __checked_selected_helper( $readonly, $current, $echo, 'readonly' );
 }

@@ -19,11 +19,11 @@ get_header(); ?>
 			<h1 class="page-title">
 			<?php
 			/* translators: Search query. */
-			printf( esc_html__( 'Search Results for: %s', 'inspiro' ), '<span>' . get_search_query() . '</span>' );
+			printf( esc_html__( 'Результаты поиска для: %s', 'inspiro' ), '<span>' . get_search_query() . '</span>' );
 			?>
 			</h1>
 		<?php else : ?>
-			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'inspiro' ); ?></h1>
+			<h1 class="page-title"><?php esc_html_e( 'Ничего не найдено', 'inspiro' ); ?></h1>
 		<?php endif; ?>
 	</header><!-- .page-header -->
 
@@ -52,7 +52,7 @@ get_header(); ?>
 		else :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'inspiro' ); ?></p>
+			<p><?php esc_html_e( 'Извините, но ничего не соответствует вашим поисковым запросам. Пожалуйста, попытайтесь снова с другими ключевыми словами.', 'inspiro' ); ?></p>
 			<?php
 				get_search_form();
 		endif;

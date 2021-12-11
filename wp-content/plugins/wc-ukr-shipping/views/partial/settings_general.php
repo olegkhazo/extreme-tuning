@@ -51,12 +51,5 @@
         <input name="wc_ukr_shipping[spinner_color]" id="wc_ukr_shipping_spinner_color" type="text" value="<?= get_option('wc_ukr_shipping_spinner_color', '#dddddd'); ?>" />
     </div>
 
-    <div class="wcus-sub-title"><?= __('options_label_warehouse_update', WCUS_TRANSLATE_DOMAIN); ?></div>
-    <div class="wcus-settings__db">
-        <button class="wcus-settings__update-data wcus-btn wcus-btn--outline wcus-btn--sm">
-            <?= wc_ukr_shipping_import_svg('refresh.svg'); ?>
-            <?= __('options_btn_warehouse_update', WCUS_TRANSLATE_DOMAIN); ?>
-        </button>
-    </div>
-    <div id="wcus-updating-data-state" class="wcus-settings__db"></div>
+    <div id="wcus-warehouse-loader"></div>
 </div>

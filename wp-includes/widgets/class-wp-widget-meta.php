@@ -28,6 +28,7 @@ class WP_Widget_Meta extends WP_Widget {
 			'classname'                   => 'widget_meta',
 			'description'                 => __( 'Login, RSS, &amp; WordPress.org links.' ),
 			'customize_selective_refresh' => true,
+			'show_instance_in_rest'       => true,
 		);
 		parent::__construct( 'meta', __( 'Meta' ), $widget_ops );
 	}
@@ -70,8 +71,8 @@ class WP_Widget_Meta extends WP_Widget {
 		<ul>
 			<?php wp_register(); ?>
 			<li><?php wp_loginout(); ?></li>
-			<!-- <li><a href="<?php echo esc_url( get_bloginfo( 'rss2_url' ) ); ?>"><?php _e( 'Entries feed' ); ?></a></li> -->
-			<!-- <li><a href="<?php echo esc_url( get_bloginfo( 'comments_rss2_url' ) ); ?>"><?php _e( 'Comments feed' ); ?></a></li> -->
+			<li><a href="<?php echo esc_url( get_bloginfo( 'rss2_url' ) ); ?>"><?php _e( 'Entries feed' ); ?></a></li>
+			<li><a href="<?php echo esc_url( get_bloginfo( 'comments_rss2_url' ) ); ?>"><?php _e( 'Comments feed' ); ?></a></li>
 
 			<?php
 			/**
@@ -83,15 +84,15 @@ class WP_Widget_Meta extends WP_Widget {
 			 * @param string $html     Default HTML for the WordPress.org list item.
 			 * @param array  $instance Array of settings for the current widget.
 			 */
-			// echo apply_filters(
-			// 	'widget_meta_poweredby',
-			// 	sprintf(
-			// 		'<li><a href="%1$s">%2$s</a></li>',
-			// 		esc_url( __( 'https://wordpress.org/' ) ),
-			// 		__( 'WordPress.org' )
-			// 	),
-			// 	$instance
-			// );
+			echo apply_filters(
+				'widget_meta_poweredby',
+				sprintf(
+					'<li><a href="%1$s">%2$s</a></li>',
+					esc_url( __( 'https://wordpress.org/' ) ),
+					__( 'WordPress.org' )
+				),
+				$instance
+			);
 
 			wp_meta();
 			?>

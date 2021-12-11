@@ -1,6 +1,7 @@
 /**
  * External dependencies
  */
+
 import {
 	OrderSummary,
 	TotalsCoupon,
@@ -13,7 +14,10 @@ import {
 	TotalsFees,
 	TotalsTaxes,
 	ExperimentalOrderMeta,
+	ExperimentalDiscountsMeta,
+	TotalsWrapper,
 } from '@woocommerce/blocks-checkout';
+
 import { getCurrencyFromPriceResponse } from '@woocommerce/price-format';
 import { useShippingDataContext } from '@woocommerce/base-context';
 import {
@@ -27,6 +31,7 @@ const CheckoutSidebar = ( {
 	cartItems = [],
 	cartFees = [],
 	cartTotals = {},
+	showRateAfterTaxName = false,
 } ) => {
 	const {
 		applyCoupon,
@@ -47,43 +52,63 @@ const CheckoutSidebar = ( {
 		cart,
 	};
 
+	const discountsSlotFillProps = {
+		extensions,
+		cart,
+	};
+
 	return (
 		<>
-			<OrderSummary cartItems={ cartItems } />
-			<Subtotal currency={ totalsCurrency } values={ cartTotals } />
-			<TotalsFees currency={ totalsCurrency } cartFees={ cartFees } />
-			<TotalsDiscount
-				cartCoupons={ cartCoupons }
-				currency={ totalsCurrency }
-				isRemovingCoupon={ isRemovingCoupon }
-				removeCoupon={ removeCoupon }
-				values={ cartTotals }
-			/>
-			{ needsShipping && (
-				<TotalsShipping
-					showCalculator={ false }
-					showRateSelector={ false }
-					values={ cartTotals }
+			<TotalsWrapper>
+				<OrderSummary cartItems={ cartItems } />
+			</TotalsWrapper>
+			<TotalsWrapper>
+				<Subtotal currency={ totalsCurrency } values={ cartTotals } />
+				<TotalsFees currency={ totalsCurrency } cartFees={ cartFees } />
+				<TotalsDiscount
+					cartCoupons={ cartCoupons }
 					currency={ totalsCurrency }
-				/>
-			) }
-			{ ! getSetting( 'displayCartPricesIncludingTax', false ) && (
-				<TotalsTaxes
-					currency={ totalsCurrency }
+					isRemovingCoupon={ isRemovingCoupon }
+					removeCoupon={ removeCoupon }
 					values={ cartTotals }
 				/>
-			) }
+			</TotalsWrapper>
 			{ getSetting( 'couponsEnabled', true ) && (
-				<TotalsCoupon
-					onSubmit={ applyCoupon }
-					initialOpen={ false }
-					isLoading={ isApplyingCoupon }
-				/>
+				<TotalsWrapper>
+					<TotalsCoupon
+						onSubmit={ applyCoupon }
+						initialOpen={ false }
+						isLoading={ isApplyingCoupon }
+					/>
+				</TotalsWrapper>
 			) }
-			<TotalsFooterItem
-				currency={ totalsCurrency }
-				values={ cartTotals }
-			/>
+			<ExperimentalDiscountsMeta.Slot { ...discountsSlotFillProps } />
+			{ needsShipping && (
+				<TotalsWrapper>
+					<TotalsShipping
+						showCalculator={ false }
+						showRateSelector={ false }
+						values={ cartTotals }
+						currency={ totalsCurrency }
+					/>
+				</TotalsWrapper>
+			) }
+			{ ! getSetting( 'displayCartPricesIncludingTax', false ) &&
+				parseInt( cartTotals.total_tax, 10 ) > 0 && (
+					<TotalsWrapper>
+						<TotalsTaxes
+							currency={ totalsCurrency }
+							showRateAfterTaxName={ showRateAfterTaxName }
+							values={ cartTotals }
+						/>
+					</TotalsWrapper>
+				) }
+			<TotalsWrapper>
+				<TotalsFooterItem
+					currency={ totalsCurrency }
+					values={ cartTotals }
+				/>
+			</TotalsWrapper>
 			<ExperimentalOrderMeta.Slot { ...slotFillProps } />
 		</>
 	);

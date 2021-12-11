@@ -43,6 +43,7 @@
 		</div><!-- .site-branding-text -->
 
 		<?php get_template_part( 'template-parts/header/header', 'button' ); ?>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/white_logo.png" class="mainBlockLogo" alt="Extreme Tuning Logo">
 
 	</div><!-- .inner-wrap -->
 </div><!-- .site-branding -->

@@ -2,6 +2,7 @@
 
 namespace kirillbdev\WCUkrShipping\DB\Repositories;
 
+use kirillbdev\WCUkrShipping\DB\Dto\InsertCityDto;
 use kirillbdev\WCUSCore\Facades\DB;
 
 if ( ! defined('ABSPATH')) {
@@ -31,5 +32,40 @@ class CityRepository
         return DB::table('wc_ukr_shipping_np_cities')
             ->where('ref', $ref)
             ->first();
+    }
+
+    public function clearCities()
+    {
+        DB::table('wc_ukr_shipping_np_cities')->truncate();
+    }
+
+    public function insertCity(InsertCityDto $dto)
+    {
+        DB::table('wc_ukr_shipping_np_cities')
+            ->insert([
+                'ref' => $dto->getRef(),
+                'description' => $dto->getDescription(),
+                'description_ru' => $dto->getDescriptionRu(),
+                'area_ref' => $dto->getAreaRef()
+            ]);
+    }
+
+    public function deleteByRefs(array $refs)
+    {
+        if ( ! $refs) {
+            return;
+        }
+
+        global $wpdb;
+
+        $inputs = '';
+
+        for ($i = 0; $i < count($refs); $i++) {
+            $inputs .= ($i > 0 ? ',' : '') . '%s';
+        }
+
+        $wpdb->query(
+            $wpdb->prepare("delete from wc_ukr_shipping_np_cities where ref in ($inputs)", $refs)
+        );
     }
 }

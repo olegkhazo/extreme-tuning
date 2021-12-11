@@ -30,4 +30,14 @@
         <div class="wcus-control-label"><?= __('options_label_address_shipping', WCUS_TRANSLATE_DOMAIN); ?></div>
     </div>
 
+    <?php /* Store last warehouse */ ?>
+    <div class="wcus-form-group wcus-form-group--horizontal">
+      <label class="wcus-switcher">
+        <input type="hidden" name="wc_ukr_shipping[np_save_warehouse]" value="0">
+        <input type="checkbox" name="wc_ukr_shipping[np_save_warehouse]" value="1" <?= (int)get_option(WCUS_OPTION_SAVE_CUSTOMER_ADDRESS) === 1 ? 'checked' : ''; ?>>
+        <span class="wcus-switcher__control"></span>
+      </label>
+      <div class="wcus-control-label"><?= __('options_label_save_customer_address', WCUS_TRANSLATE_DOMAIN); ?></div>
+    </div>
+
 </div>

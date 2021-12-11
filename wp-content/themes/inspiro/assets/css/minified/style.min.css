@@ -11,8 +11,24 @@ body {
 }
 
 main {
-    display: block
+    display: block;
 }
+
+@media(max-width: 760px) {
+    p[class="has-text-align-center has-text-color"] {
+        font-size: 35px !important;
+    }
+}
+@media(max-width: 760px) {
+    p[class="has-text-align-center has-medium-font-size"] {
+        line-height: 1.5;
+    }
+}
+
+a[href="https://ru.wordpress.org/"] {
+    display: none;
+} 
+
 
 h1 {
     font-size: 2em;
@@ -273,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
-    padding-top: 0
+    padding-top: 1em
 }
 
 h1, h2, h3 {
@@ -371,8 +387,10 @@ abbr, acronym {
 }
 
 ins, mark {
-    background: #fff9c0;
-    text-decoration: none
+    background: none;
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 big {
@@ -494,7 +512,7 @@ label {
 }
 
 input, textarea {
-    padding: 11px 10px;
+    padding: 1px 10px;
     font-size: 16px;
     font-size: 1rem;
     background: #fff;
@@ -581,7 +599,7 @@ hr {
 }
 
 ol, ul {
-    margin: 0 0 1.5em 1em;
+    margin: 0 0 1.5em 0;
     padding: 0
 }
 
@@ -641,12 +659,12 @@ td:last-child, th:last-child {
 a {
     transition: all .1s ease-in;
     text-decoration: none;
-    color: #0bb4aa
+    color: #ffa41d
 }
 
 a:hover {
     text-decoration: none;
-    color: #076c65
+    color: #ffa41d
 }
 
 .comment-body a, .entry-summary a:not(.more-link), .textwidget a, body:not(.fl-builder) .entry-content a {
@@ -1368,7 +1386,8 @@ body {
 }
 
 body.has-header-image .site-title, body.has-header-image .site-title a, body.has-header-video .site-title, body.has-header-video .site-title a {
-    color: #fff
+    color: #fff;
+    font-weight: 400;
 }
 
 .site-description {
@@ -1462,6 +1481,18 @@ body:not(.wp-custom-logo) a.custom-logo-text {
     text-transform: uppercase
 }
 
+.header-logo-wrapper a img {
+    width: 35px;
+    margin: 10px 15px 0 0;
+}
+
+@media (max-width: 640px) {
+    .header-logo-wrapper a img {
+        width: 35px;
+        margin: 10px 7px 0 0;
+    }
+}
+
 body.home.title-tagline-hidden.has-header-image .custom-logo-link img, body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
     max-height: 200px;
     max-width: 100%
@@ -1471,6 +1502,17 @@ body:not(.title-tagline-hidden) .site-branding-text {
     display: inline-block;
     max-width: 100%;
     vertical-align: middle
+}
+
+.mainBlockLogo {
+    margin-top: 6em;
+    height: 110px;
+    width: 193px;
+}
+@media (max-width: 320px) {
+    .mainBlockLogo {
+        margin-top: 2em;
+    }
 }
 
 .custom-header {
@@ -1607,6 +1649,12 @@ body:not(.title-tagline-hidden) .site-branding-text {
         top: 0;
         transform: none;
         width: 100%
+    }
+}
+
+@media (max-width: 950px) {
+    .has-header-image .custom-header-media img, .has-header-image:not(.inspiro-front-page):not(.home) .custom-header-media img, .has-header-video .custom-header-media video {
+        object-position: -155px;
     }
 }
 
@@ -2003,7 +2051,7 @@ body.has-archive-description:not(.has-header-image) .taxonomy-description:after 
 }
 
 .page .entry-content, .page .entry-header .inner-wrap, .page:not(.inspiro-front-page) .entry-footer, .single .entry-content, .single .entry-footer, .single .entry-header .inner-wrap {
-    margin: 2.8125em auto;
+    margin: -1em auto;
     max-width: calc(950px + 20px);
     padding-left: 10px;
     padding-right: 10px
@@ -2120,6 +2168,7 @@ body.has-archive-description:not(.has-header-image) .taxonomy-description:after 
 
 .wp-block-button a {
     text-transform: uppercase;
+    display: block;
     font-weight: 400;
     letter-spacing: 1px;
     font-family: Montserrat, sans-serif;
@@ -2128,9 +2177,9 @@ body.has-archive-description:not(.has-header-image) .taxonomy-description:after 
 }
 
 .wp-block-button a:hover {
-    background-color: #0bb4aa;
-    color: #fff;
-    border-color: #0bb4aa
+    background-color: none;
+    color: #111111;
+    border-color: none
 }
 
 .wp-block-button.is-style-outline a:hover {
@@ -2366,7 +2415,7 @@ h4.jp-relatedposts-post-title {
 }
 
 .page .entry-title, .page-title {
-    margin-top: 0;
+    margin-top: 60px;
     color: #222;
     font-size: 26px;
     font-size: 1.625rem;
@@ -2424,6 +2473,10 @@ h4.jp-relatedposts-post-title {
 
 .site-info a:focus, .site-info a:hover {
     color: #0bb4aa
+}
+
+.emailFooter {
+    margin-top: 10px;
 }
 
 .site-info .copyright {
@@ -3713,8 +3766,8 @@ p>embed:only-child, p>iframe:only-child, p>object:only-child {
         padding-left: 4%
     }
     body:not(.page-layout-sidebar-right) #primary {
-        padding-left: 0;
-        padding-right: 0
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -3756,10 +3809,9 @@ p>embed:only-child, p>iframe:only-child, p>object:only-child {
 
 @media screen and (max-width:40em) {
     body:not(.wp-custom-logo) a.custom-logo-text {
-        font-size: 20px;
-        font-size: 1.25rem;
+        font-size: 12px;
         letter-spacing: 0;
-        line-height: 22px
+        line-height: 13px;
     }
     .clean_skin_wrap_post h3 {
         font-size: 16px
@@ -3874,13 +3926,17 @@ p>embed:only-child, p>iframe:only-child, p>object:only-child {
 }
 
 .socialLinksFooter {
-    width: 200px;
+    width: 245px;
 }
 
-.helpFooter ul li:last-child img {
+.helpFooter .phoneNumber img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
+}
+
+.messanger-icon {
+
 }
 
 .socialLinksFooter li:not(:first-child) {
@@ -3892,9 +3948,9 @@ p>embed:only-child, p>iframe:only-child, p>object:only-child {
 }
 
 .logoFooterHome img {
-    margin-left: 20px;
-    height: 120px;
-    width: 170px;
+    margin-left: 15px;
+    height: 110px;
+    width: 193px;
 }
 
 @media (max-width: 942px) {
@@ -3907,7 +3963,7 @@ p>embed:only-child, p>iframe:only-child, p>object:only-child {
     }
     
     .socialLinksFooter {
-        width: 200px;
+        width: 250px;
     }
 }
 
@@ -3921,14 +3977,18 @@ p>embed:only-child, p>iframe:only-child, p>object:only-child {
     }
     
     .socialLinksFooter {
-        width: 250px;
+        width: 292px;
     }
 }
 
-@media (max-width: 592px) {
+@media (max-width: 632px) {
     .preFooter {
         flex-direction: column;
         text-align: center;
+    }
+    
+    .logoFooterHome img {
+        margin-left: 10px;
     }
 
     .infoFooter, .helpFooter, .socialLinksFooter {

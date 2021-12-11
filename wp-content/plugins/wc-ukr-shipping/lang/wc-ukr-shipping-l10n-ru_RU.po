@@ -157,6 +157,10 @@ msgstr "Информация об отделениях Новой Почты:"
 msgid "options_btn_warehouse_update"
 msgstr "Обновить отделения"
 
+# Позиция блока на странице оформления заказа
+msgid "options_label_save_customer_address"
+msgstr "Сохранять последнее выбранное отделение пользователя"
+
 msgid "save_options_success"
 msgstr "Настройки успешно сохранены"
 
